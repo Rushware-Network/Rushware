@@ -22,7 +22,8 @@ try {
     }
     Push-Location $PSScriptRoot
     try {
-        & $javaExe -Xms256M -Xmx2G -Dterminal.jline=false -Dterminal.ansi=true -jar SportPaper.jar nogui
+        $javaArgs = @('-Xms256M', '-Xmx2G', '-Dterminal.jline=false', '-Dterminal.ansi=true', '-jar', 'SportPaper.jar', 'nogui')
+        & $javaExe @javaArgs
         if ($LASTEXITCODE -ne 0) { throw "Server exited with code $LASTEXITCODE" }
     } finally { Pop-Location }
 } catch {

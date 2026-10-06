@@ -6,6 +6,7 @@
 - Keep Rushware admission code in `rushware-guard`; preserve upstream gameplay unless a task explicitly changes it.
 - Never replace strict admission with a protocol-47-only check, client brand or a client-supplied version string.
 - Until trusted launcher verification is implemented, missing verification must deny login.
+- The user authorized a standalone local gameplay test package. Its explicit `local-test` mode may admit protocol 47 only with loopback bind and loopback source. Keep strict mode as the default and label the test mode as unable to distinguish 1.8.x releases.
 - Do not commit server binaries, player data, maps, credentials or runtime configuration. Templates belong in `deployment/`.
 - Verify relevant code with Gradle tests and run `scripts/Build.ps1` for release changes.
 - Do not accept Minecraft EULA or publish credentials on the user's behalf.

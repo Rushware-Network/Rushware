@@ -75,12 +75,14 @@ server-*/*
 
 # Rushware local server, secrets and local tooling
 /runtime/
+/server-package/
 /.local/
 *.local.ps1
 .env
 .env.*
 !.env.example
 !gradlew.bat
+!deployment/Start-Standalone.bat
 !deployment/server.properties
 !deployment/sportpaper.yml
 

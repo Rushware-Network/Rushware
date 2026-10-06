@@ -1,0 +1,4 @@
+# Strict admission is the default. Restart the server after changing this setting.
+# Local test mode only permits protocol 47 from loopback when the server binds to loopback.
+# It allows all Java 1.8.x releases and does NOT verify the exact version 1.8.9.
+local-test: false

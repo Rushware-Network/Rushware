@@ -9,14 +9,18 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class RushwareGuardPlugin extends JavaPlugin implements Listener {
+  private boolean localTest;
   private static final List<String> TRANSLATORS =
       List.of("ViaVersion", "ViaBackwards", "ViaRewind", "ProtocolSupport");
 
   @Override
   public void onEnable() {
+    saveDefaultConfig();
+    localTest = getConfig().getBoolean("local-test", false);
     getServer().getPluginManager().registerEvents(this, this);
-    getLogger().warning(
-        "Strict 1.8.9 admission enabled. Without a trusted ClientVersionVerifier, all logins are denied.");
+    getLogger().warning(localTest
+        ? "LOCAL TEST MODE: permits loopback protocol-47 clients, including other 1.8.x releases. This is not strict 1.8.9 verification."
+        : "Strict 1.8.9 admission enabled. Without a trusted ClientVersionVerifier, all logins are denied.");
   }
 
   @EventHandler(priority = EventPriority.HIGHEST)
@@ -36,6 +40,8 @@ public final class RushwareGuardPlugin extends JavaPlugin implements Listener {
 
     try {
       int protocol = event.getPlayer().getProtocolVersion();
+      if (localTest && AdmissionPolicy.permitsLocalTest(
+          protocol, event.getAddress(), getServer().getIp())) return;
       var verifier = getServer().getServicesManager().load(ClientVersionVerifier.class);
       String version = protocol == 47 && verifier != null
           ? verifier.consumeVerifiedVersion(event.getPlayer().getUniqueId(), event.getAddress())

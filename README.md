@@ -20,6 +20,10 @@ Rushware
 构建产物在 `build/libs/`，开发服在 `runtime/`（默认仅监听本机）。
 详见 [开发与部署说明](docs/RUSHWARE.md)。
 
+本地玩法验证可使用独立的 `server-package/` 文件夹，双击其中的 `Start.bat`。
+打包命令为 `.\scripts\Package-LocalTestServer.ps1`，说明模板见 [本地开服验证](deployment/LOCAL_TEST_README.md)。
+该包开启仅限回环地址的测试模式，可以用原版 1.8.9 测试 PGM，但无法区分其他 1.8.x 小版本。
+
 目录：`core/`、`util/`、`platform/`、`server/` 为上游 PGM；`rushware-guard/` 为准入插件；
 `deployment/` 保存配置模板和依赖基线；`scripts/` 保存 Windows 开发脚本。
 

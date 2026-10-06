@@ -1,5 +1,8 @@
-# Insert before PGM's default group. Titles are intentionally unset.
+# Insert before PGM's default group. Keep name/team colors separate from group symbols.
   admin:
+    prefix: "&b&l❑&r "
+    suffix: ""
+    display-name: "&bAdmin"
     observer-permissions:
       - "+pgm.start"
       - "+pgm.stop"
@@ -18,5 +21,11 @@
       - "-pgm.join.choose"
       - "-pgm.vanish"
       - "-pgm.defuse"
-  sponsor: {}
-  supporter: {}
+  sponsor:
+    prefix: "&5&l✳⁺⁺&r "
+    suffix: ""
+    display-name: "&5Sponsor"
+  supporter:
+    prefix: "&d&l✳&r "
+    suffix: ""
+    display-name: "&dSupporter"

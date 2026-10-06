@@ -7,7 +7,8 @@
 | supporter | 3 | 是 | 否 |
 | default | 1 | 沿用普通玩家规则 | 沿用普通玩家规则 |
 
-四组使用小写内部 ID，Admin、Sponsor、Supporter 的头衔暂不设置。
+四组使用小写内部 ID。Admin 为 Aqua 加粗 `❑`（`&b&l`），Sponsor 为紫色加粗 `✳⁺⁺`（`&5&l`），Supporter 为粉色加粗 `✳`（`&d&l`）。
+头衔结尾重置格式并留空格，保留玩家名字原有的队伍颜色。
 每个特殊组只继承 default，避免赞助组之间的头衔叠加；投票取最高有效倍率，不相加。
 PGM 上限配置为 10；票数仍遵循 PGM 原生规则，离线玩家的票按 1 计。
 满队加入沿用 PGM 的人数上限、队伍平衡及现有 priority-kick 规则；不等于绕过最大硬上限。
@@ -37,7 +38,7 @@ lp export before-rushware-groups
 lp import rushware-groups --replace
 ```
 
-导入只替换文件中的四个组，不修改玩家、其他组或头衔。保存导出文件以便恢复。
+导入只替换文件中的四个权限组，不修改玩家或其他组；头衔独立由 PGM 配置显示。保存导出文件以便恢复。
 为玩家分配组的控制台命令：
 
 ```text

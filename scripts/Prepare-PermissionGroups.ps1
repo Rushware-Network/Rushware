@@ -16,6 +16,15 @@ if ($existing -eq 0) {
 }
 $config = [regex]::Replace($config, '(?m)^  max-extra-votes:.*$', '  max-extra-votes: 10 # Admin 10, Sponsor 5, Supporter 3, Default 1')
 $config = [regex]::Replace($config, '(?m)^  allow-extra-votes:.*$', '  allow-extra-votes: true')
+$titles = Get-Content -LiteralPath (Join-Path $ProjectRoot 'deployment/group-titles.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+foreach ($title in $titles.PSObject.Properties) {
+    $pattern = '(?ms)^  ' + [regex]::Escape($title.Name) + ':[^\r\n]*\r?\n(?<body>.*?)(?=^  [a-zA-Z0-9_-]+:|\z)'
+    $matches = [regex]::Matches($config, $pattern)
+    if ($matches.Count -ne 1) { throw "Cannot locate PGM group: $($title.Name)" }
+    $body = [regex]::Replace($matches[0].Groups['body'].Value, '(?m)^    (prefix|suffix|display-name):[^\r\n]*\r?\n', '')
+    $replacement = "  $($title.Name):`n    prefix: `"$($title.Value.prefix)`"`n    suffix: `"`"`n    display-name: `"$($title.Value.'display-name')`"`n" + $body
+    $config = $config.Remove($matches[0].Index, $matches[0].Length).Insert($matches[0].Index, $replacement)
+}
 [IO.File]::WriteAllText($configPath, $config, (New-Object Text.UTF8Encoding($false)))
 $lpFolder = Join-Path $ServerRoot 'plugins/LuckPerms'
 $null = New-Item -ItemType Directory -Path $lpFolder -Force

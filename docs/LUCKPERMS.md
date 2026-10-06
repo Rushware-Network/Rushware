@@ -14,10 +14,10 @@
 这些数据库、插件二进制和运行配置不提交 Git。
 
 现已按用户确认配置 admin/sponsor/supporter/default 四组，投票倍率为 10/5/3/1。
-尚未给任何玩家分配特殊组，也未设置三个特殊组的头衔。详见 [权限规则](PERMISSION_GROUPS.md)。
+三个特殊组的头衔已由用户指定，并配置在 PGM 中；分配和权限规则详见 [权限规则](PERMISSION_GROUPS.md)。
 LuckPerms 管理权限和组继承；目前 PGM 通过 `pgm.group.<组名>` 判定分组，
 头衔由 PGM `groups` 的 prefix/suffix 显示，不会自动读取 LuckPerms 元数据。
-后续讨论头衔设计后再配置，或开发直接读取 LuckPerms 头衔的适配器。
+目前使用 PGM 头衔配置，后续也可开发直接读取 LuckPerms 头衔的适配器。
 当前权限节点方案不需要 Vault。原版 OP、正版认证及 Guard 白名单准入继续沿用现有配置。
 
 官方说明：https://luckperms.net/wiki/Installation

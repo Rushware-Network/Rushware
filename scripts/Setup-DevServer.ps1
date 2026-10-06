@@ -2,6 +2,11 @@
 $null = Get-RushwareJava
 $lock = Get-Content (Join-Path $ProjectRoot 'deployment/dependencies.lock.json') -Raw | ConvertFrom-Json
 $null = New-Item -ItemType Directory -Force -Path $RuntimeRoot, (Join-Path $RuntimeRoot 'plugins/PGM')
+$icon = Join-Path $ProjectRoot 'assets/branding/server-icon.png'
+$runtimeIcon = Join-Path $RuntimeRoot 'server-icon.png'
+if ((Test-Path -LiteralPath $icon) -and -not (Test-Path -LiteralPath $runtimeIcon)) {
+    Copy-Item -LiteralPath $icon -Destination $runtimeIcon
+}
 $serverJar = Join-Path $RuntimeRoot 'SportPaper.jar'
 if (-not (Test-Path -LiteralPath $serverJar)) {
     Invoke-WebRequest -Uri $lock.sportpaper.url -OutFile "$serverJar.download" -UseBasicParsing

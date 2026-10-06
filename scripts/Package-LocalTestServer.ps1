@@ -15,6 +15,10 @@ foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
 }
 $null = New-Item -ItemType Directory -Path $packageRoot, "$packageRoot/plugins/PGM", "$packageRoot/plugins/RushwareGuard", "$packageRoot/maps", "$packageRoot/licenses"
 Copy-Item -LiteralPath (Join-Path $RuntimeRoot 'SportPaper.jar') -Destination $packageRoot
+$icon = Join-Path $ProjectRoot 'assets/branding/server-icon.png'
+if (Test-Path -LiteralPath $icon) {
+    Copy-Item -LiteralPath $icon -Destination (Join-Path $packageRoot 'server-icon.png')
+}
 foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
     Copy-Item -LiteralPath (Join-Path $ProjectRoot "build/libs/$name") -Destination "$packageRoot/plugins/$name"
 }

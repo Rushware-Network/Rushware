@@ -14,10 +14,16 @@ dependencies {
     runtimeOnly(project(":platform-modern")) { exclude("*") }
     testImplementation("io.papermc.paper:paper-api:26.2.build.+")
     testImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
+    testImplementation("com.google.code.gson:gson:2.11.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-tasks.withType<Test>().configureEach { useJUnitPlatform() }
+tasks.withType<Test>().configureEach {
+    useJUnitPlatform()
+    val groupPolicy = rootProject.file("deployment/luckperms-rushware-groups.json")
+    inputs.file(groupPolicy)
+    systemProperty("rushware.groupPolicy", groupPolicy.absolutePath)
+}
 
 
 tasks.named<ShadowJar>("shadowJar") {

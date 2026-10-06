@@ -143,18 +143,6 @@
                                                    "value":  false
                                                },
                                                {
-                                                   "key":  "pgm.dev",
-                                                   "value":  false
-                                               },
-                                               {
-                                                   "key":  "pgm.mod",
-                                                   "value":  false
-                                               },
-                                               {
-                                                   "key":  "pgm.premium",
-                                                   "value":  false
-                                               },
-                                               {
                                                    "key":  "pgm.gameplay",
                                                    "value":  false
                                                },
@@ -329,10 +317,6 @@
                                                  {
                                                      "key":  "pgm.join.force",
                                                      "value":  false
-                                                 },
-                                                 {
-                                                     "key":  "pgm.premium",
-                                                     "value":  false
                                                  }
                                              ]
                                },
@@ -364,10 +348,6 @@
                                                    },
                                                    {
                                                        "key":  "pgm.join.force",
-                                                       "value":  false
-                                                   },
-                                                   {
-                                                       "key":  "pgm.premium",
                                                        "value":  false
                                                    }
                                                ]

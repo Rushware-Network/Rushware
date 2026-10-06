@@ -18,6 +18,7 @@ Admin 可以警告、禁言/解除禁言、踢人、封禁/解封、冻结/解�
 参赛时仍遵守 PGM 对导航和背包查看的限制；没有创造、刷物品、WorldEdit 编辑、脚本执行权限。
 Admin 不能停服、重启/取消服务器重启、修改白名单、授予 OP、管理 LuckPerms、重载或修改玩法参数。
 通过显式权限清单实现，不授予 `pgm.*`、`pgm.mod`、`pgm.premium` 或原版 OP。
+不要把 `pgm.dev`、`pgm.mod` 或 `pgm.premium` 显式设为 false：LuckPerms 会把拒绝传递给这些父权限下的普通功能，包括 `pgm.join`、`pgm.leave` 和 `pgm.inventory`。不授予父权限即可；限制管理能力使用具体功能节点。
 原版 OP 是独立的服务器所有者权限；要让已有 OP 玩家遵守 Admin 规则，需由所有者先取消其 OP。
 
 `pgm.stop` 只管理比赛结束和比赛倒计时；服务器重启与取消重启单独要求 `pgm.restart`。

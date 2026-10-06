@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class RushwareGuardPlugin extends JavaPlugin implements Listener {
   private boolean localTest;
+  private boolean remoteTest;
   private static final List<String> TRANSLATORS =
       List.of("ViaVersion", "ViaBackwards", "ViaRewind", "ProtocolSupport");
 
@@ -17,8 +18,11 @@ public final class RushwareGuardPlugin extends JavaPlugin implements Listener {
   public void onEnable() {
     saveDefaultConfig();
     localTest = getConfig().getBoolean("local-test", false);
+    remoteTest = getConfig().getBoolean("remote-test", false);
     getServer().getPluginManager().registerEvents(this, this);
-    getLogger().warning(localTest
+    getLogger().warning(remoteTest
+        ? "REMOTE TEST MODE: permits authenticated, whitelisted protocol-47 clients, including other 1.8.x releases. This is not strict 1.8.9 verification."
+        : localTest
         ? "LOCAL TEST MODE: permits loopback protocol-47 clients, including other 1.8.x releases. This is not strict 1.8.9 verification."
         : "Strict 1.8.9 admission enabled. Without a trusted ClientVersionVerifier, all logins are denied.");
   }
@@ -40,6 +44,13 @@ public final class RushwareGuardPlugin extends JavaPlugin implements Listener {
 
     try {
       int protocol = event.getPlayer().getProtocolVersion();
+      if (remoteTest) {
+        if (!AdmissionPolicy.permitsRemoteTest(protocol, getServer().getOnlineMode(),
+            getServer().hasWhitelist(), event.getPlayer().isWhitelisted())) {
+          deny(event, "Rushware remote testing requires Minecraft Java 1.8.x, online authentication and whitelist membership.");
+        }
+        return;
+      }
       if (localTest && AdmissionPolicy.permitsLocalTest(
           protocol, event.getAddress(), getServer().getIp())) return;
       var verifier = getServer().getServicesManager().load(ClientVersionVerifier.class);

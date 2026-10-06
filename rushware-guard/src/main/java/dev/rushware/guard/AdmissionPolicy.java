@@ -2,12 +2,18 @@ package dev.rushware.guard;
 
 import java.net.InetAddress;
 
-/** No protocol-only fallback: protocol 47 is shared by all released Java 1.8 clients. */
+/** Strict admission and explicitly enabled test exceptions for the shared 1.8 protocol. */
 public final class AdmissionPolicy {
   private AdmissionPolicy() {}
 
   public static boolean permits(int protocol, String verifiedVersion) {
     return protocol == 47 && "1.8.9".equals(verifiedVersion);
+  }
+
+  /** Remote testing still requires online authentication and an enabled whitelist. */
+  public static boolean permitsRemoteTest(
+      int protocol, boolean onlineMode, boolean whitelistEnabled, boolean whitelisted) {
+    return protocol == 47 && onlineMode && whitelistEnabled && whitelisted;
   }
 
   /** Explicit local gameplay testing only; this does not verify the exact client release. */

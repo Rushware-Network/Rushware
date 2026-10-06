@@ -2,3 +2,5 @@
 # Local test mode only permits protocol 47 from loopback when the server binds to loopback.
 # It allows all Java 1.8.x releases and does NOT verify the exact version 1.8.9.
 local-test: false
+# Explicit remote test exception: all 1.8.x releases, online mode and whitelist required.
+remote-test: false

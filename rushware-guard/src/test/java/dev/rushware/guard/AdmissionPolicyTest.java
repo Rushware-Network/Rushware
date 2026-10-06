@@ -8,6 +8,17 @@ import org.junit.jupiter.api.Test;
 
 class AdmissionPolicyTest {
   @Test
+  void remoteTestRequiresAuthenticationWhitelistAndProtocol47() {
+    assertTrue(AdmissionPolicy.permitsRemoteTest(47, true, true, true));
+    assertFalse(AdmissionPolicy.permitsRemoteTest(47, false, true, true));
+    assertFalse(AdmissionPolicy.permitsRemoteTest(47, true, false, true));
+    assertFalse(AdmissionPolicy.permitsRemoteTest(47, true, true, false));
+    for (int protocol : new int[] {-1, 5, 46, 48, 107, 776}) {
+      assertFalse(AdmissionPolicy.permitsRemoteTest(protocol, true, true, true));
+    }
+  }
+
+  @Test
   void requiresExactVerifiedVersionEvenForSharedProtocol() {
     assertTrue(AdmissionPolicy.permits(47, "1.8.9"));
     for (String version : new String[] {"1.8", "1.8.8", "1.9", "1.8.9-forge", "", null}) {

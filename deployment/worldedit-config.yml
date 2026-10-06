@@ -1,0 +1,6 @@
+# Compass navigation for PGM observers; editing wand matches PGM's rabbit foot.
+navigation-wand:
+  item: 345
+  max-distance: 100
+wand-item: 414
+no-op-permissions: false

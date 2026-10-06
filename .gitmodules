@@ -1,0 +1,3 @@
+[submodule "vendor/worldedit"]
+	path = vendor/worldedit
+	url = https://github.com/EngineHub/WorldEdit.git

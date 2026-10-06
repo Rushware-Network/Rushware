@@ -11,8 +11,12 @@ if ((Get-FileHash -LiteralPath (Join-Path $RuntimeRoot 'SportPaper.jar') -Algori
     throw 'SportPaper checksum mismatch.'
 }
 $plugins = Get-ChildItem -LiteralPath (Join-Path $RuntimeRoot 'plugins') -Filter '*.jar'
+if (-not (Test-Path -LiteralPath (Join-Path $RuntimeRoot 'plugins/WorldEdit.jar')) -or
+    (Get-FileHash -LiteralPath (Join-Path $RuntimeRoot 'plugins/WorldEdit.jar') -Algorithm SHA256).Hash -ne $lock.worldedit.sha256) {
+    throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
+}
 foreach ($plugin in $plugins) {
-    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar')) {
+    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar')) {
         throw "Unreviewed plugin $($plugin.Name). Review admission compatibility before extending this allowlist."
     }
 }

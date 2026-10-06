@@ -1,4 +1,4 @@
-# Rushware: PublicMaps KOTF / FFA / KOTH / TDM end-of-match voting.
+# Rushware: PublicMaps KOTF / FFA / KOTH / TDM and CommunityMaps touchdown voting.
 pools:
   publicmaps:
     type: voted
@@ -209,3 +209,27 @@ pools:
       - 'Xyth KotF'
       - 'Yggdrasil'
       - 'Zao'
+      - 'Blue Lock'
+      - 'Chess Cathedral'
+      - 'Colorado Alpines'
+      - 'Experiment 12'
+      - 'Fireballs Bowl'
+      - 'Friday Night Lights'
+      - 'Keeper'
+      - 'Moon Brady'
+      - 'Pigskin Punchout'
+      - 'Possession Game'
+      - 'Project Classbowl'
+      - 'Prospect Park'
+      - 'Shingeki no Brady'
+      - 'Steppe Bowl'
+      - 'TE Brady: MVP Edition'
+      - 'The Overcast Bowl'
+      - 'The Souper Bowl'
+      - 'The Void Bowl'
+      - 'Tom Brady'
+      - 'Tom Brady: MVP Edition'
+      - 'Trip to Cancun'
+      - 'Tron Brady'
+      - 'Village Bowl'
+      - 'War of Brady'

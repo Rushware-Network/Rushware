@@ -17,8 +17,12 @@ try {
     if ((Get-FileHash -LiteralPath (Join-Path $PSScriptRoot 'SportPaper.jar') -Algorithm SHA256).Hash -ne $lock.sportpaper.sha256) {
         throw 'SportPaper checksum mismatch.'
     }
+    if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'plugins/WorldEdit.jar')) -or
+        (Get-FileHash -LiteralPath (Join-Path $PSScriptRoot 'plugins/WorldEdit.jar') -Algorithm SHA256).Hash -ne $lock.worldedit.sha256) {
+        throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
+    }
     foreach ($plugin in (Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'plugins') -Filter '*.jar')) {
-        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
+        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
     }
     Push-Location $PSScriptRoot
     try {

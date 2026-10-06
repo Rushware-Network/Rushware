@@ -46,5 +46,6 @@ foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
     if (-not (Test-Path -LiteralPath $artifact)) { throw "Missing $name. Run scripts/Build.ps1 first." }
     Copy-Item -LiteralPath $artifact -Destination (Join-Path $RuntimeRoot "plugins/$name") -Force
 }
+& "$PSScriptRoot/Install-WorldEdit.ps1" -ServerRoot $RuntimeRoot
 Write-Host 'Dev server prepared in runtime/. Strict admission stays closed until a trusted verifier is implemented.'
 Write-Host 'Read the Minecraft EULA and accept it in runtime/eula.txt before using Start-DevServer.ps1.'

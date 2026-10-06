@@ -41,6 +41,8 @@ $revision = & git -C $ProjectRoot rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Could not read source revision.' }
 Set-Content -LiteralPath "$packageRoot/BUILD.txt" -Encoding ASCII -Value @("Rushware source commit: $revision", 'Profile: local gameplay testing only; not strict 1.8.9 verification.', 'Required Java: JDK 25')
 Write-Host "Standalone local test package created: $packageRoot"
+& "$PSScriptRoot/Install-WorldEdit.ps1" -ServerRoot $packageRoot
 if (Test-Path -LiteralPath (Join-Path $ProjectRoot '.local/PublicMaps/kotf')) {
     & "$PSScriptRoot/Import-PublicMaps.ps1" -ServerRoot $packageRoot
+    & "$PSScriptRoot/Import-TouchdownMaps.ps1" -ServerRoot $packageRoot
 }

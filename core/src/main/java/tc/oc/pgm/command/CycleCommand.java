@@ -23,7 +23,7 @@ public final class CycleCommand {
 
   @Command("cycle [duration] [map]")
   @CommandDescription("Cycle to the next match")
-  @Permission(Permissions.START)
+  @Permission(Permissions.CYCLE)
   public void cycle(
       CommandSender sender,
       Match match,
@@ -54,7 +54,7 @@ public final class CycleCommand {
 
   @Command("recycle|rematch [duration]")
   @CommandDescription("Reload (cycle to) the current map")
-  @Permission(Permissions.START)
+  @Permission(Permissions.CYCLE)
   public void recycle(
       CommandSender sender,
       Match match,

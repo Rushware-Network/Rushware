@@ -14,7 +14,7 @@ PGM 上限配置为 10；票数仍遵循 PGM 原生规则，离线玩家的票�
 满队加入沿用 PGM 的人数上限、队伍平衡及现有 priority-kick 规则；不等于绕过最大硬上限。
 
 Admin 可以警告、禁言/解除禁言、踢人、封禁/解封、冻结/解除冻结、查看背包和使用管理频道。
-开始/结束比赛、切图、修改下一图和投票候选、调整队伍人数、调队、隐身和拆除 TNT 仅在观察者状态开放。
+Admin 在观察者和参赛状态都可以使用 `/end` 或 `/finish` 结束比赛，以及 `/cycle` 切图（包括 `/recycle`、`/rematch`）。开始比赛、独立修改下一图和投票候选、调整队伍人数、调队、隐身和拆除 TNT 仅在观察者状态开放。
 参赛时仍遵守 PGM 对导航和背包查看的限制；没有创造、刷物品、WorldEdit 编辑、脚本执行权限。
 Admin 不能停服、重启/取消服务器重启、修改白名单、授予 OP、管理 LuckPerms、重载或修改玩法参数。
 通过显式权限清单实现，不授予 `pgm.*`、`pgm.mod`、`pgm.premium` 或原版 OP。
@@ -22,6 +22,7 @@ Admin 不能停服、重启/取消服务器重启、修改白名单、授予 OP�
 原版 OP 是独立的服务器所有者权限；要让已有 OP 玩家遵守 Admin 规则，需由所有者先取消其 OP。
 
 `pgm.stop` 只管理比赛结束和比赛倒计时；服务器重启与取消重启单独要求 `pgm.restart`。
+`pgm.cycle` 单独管理换图，不授予 `pgm.start`。比赛进行中直接换图需要 `/cycle 0s --force`；也可以先 `/end` 再 `/cycle 0s`。
 原有 PGM moderator/developer/OP 的重启功能保持可用。
 
 基础处罚模块为 `RushwareModeration`，通过 PGM 的 PunishmentIntegration 对接禁言。

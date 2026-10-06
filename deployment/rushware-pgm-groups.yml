@@ -5,6 +5,7 @@
     display-name: "&bAdmin"
     observer-permissions:
       - "+pgm.start"
+      - "+pgm.cycle"
       - "+pgm.stop"
       - "+pgm.setnext"
       - "+pgm.resize"
@@ -14,7 +15,8 @@
       - "+pgm.defuse"
     participant-permissions:
       - "-pgm.start"
-      - "-pgm.stop"
+      - "+pgm.cycle"
+      - "+pgm.stop"
       - "-pgm.setnext"
       - "-pgm.resize"
       - "-pgm.join.force"

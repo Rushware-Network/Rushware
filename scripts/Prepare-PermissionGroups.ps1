@@ -22,6 +22,14 @@ foreach ($title in $titles.PSObject.Properties) {
     $matches = [regex]::Matches($config, $pattern)
     if ($matches.Count -ne 1) { throw "Cannot locate PGM group: $($title.Name)" }
     $body = [regex]::Replace($matches[0].Groups['body'].Value, '(?m)^    (prefix|suffix|display-name):[^\r\n]*\r?\n', '')
+    if ($title.Name -eq 'admin') {
+        if ([regex]::Matches($body, '(?m)^      - "[+-]pgm\.start"\r?$').Count -ne 2) {
+            throw 'Cannot locate both Admin state permission lists.'
+        }
+        $body = [regex]::Replace($body, '(?m)^      - "[+-]pgm\.cycle"\r?\n', '')
+        $body = [regex]::Replace($body, '(?m)^(      - "[+-]pgm\.start")\r?$', '$1' + "`n      - `"+pgm.cycle`"")
+        $body = $body.Replace('"-pgm.stop"', '"+pgm.stop"')
+    }
     $replacement = "  $($title.Name):`n    prefix: `"$($title.Value.prefix)`"`n    suffix: `"`"`n    display-name: `"$($title.Value.'display-name')`"`n" + $body
     $config = $config.Remove($matches[0].Index, $matches[0].Length).Insert($matches[0].Index, $replacement)
 }

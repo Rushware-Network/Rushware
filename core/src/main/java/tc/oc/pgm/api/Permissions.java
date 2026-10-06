@@ -15,7 +15,8 @@ public interface Permissions {
   String GROUP = ROOT + ".group";
 
   // Individual permission nodes
-  String START = ROOT + ".start"; // Start and cycle matches
+  String START = ROOT + ".start"; // Start matches
+  String CYCLE = ROOT + ".cycle"; // Cycle to the next or selected map
   String STOP = ROOT + ".stop"; // Stop matches and cancel match countdowns
   String RESTART = ROOT + ".restart"; // Queue or cancel server restarts
   String SETNEXT = ROOT + ".setnext"; // Change the rotation and maps
@@ -75,6 +76,7 @@ public interface Permissions {
           .putAll(PREMIUM.getChildren())
           .put(PREMIUM.getName(), true)
           .put(START, true)
+          .put(CYCLE, true)
           .put(STOP, true)
           .put(RESTART, true)
           .put(SETNEXT, true)

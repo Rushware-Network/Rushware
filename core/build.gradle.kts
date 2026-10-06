@@ -22,6 +22,7 @@ tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     val groupPolicy = rootProject.file("deployment/luckperms-rushware-groups.json")
     inputs.file(groupPolicy)
+    inputs.file(rootProject.file("deployment/rushware-pgm-groups.yml"))
     systemProperty("rushware.groupPolicy", groupPolicy.absolutePath)
 }
 

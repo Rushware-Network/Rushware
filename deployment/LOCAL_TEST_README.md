@@ -21,6 +21,8 @@
 
 自带 PGMDev 的 5 张经典示例地图。地图作者保留权利，详见 `maps/README.md`。
 若已导入 PublicMaps，另有 KOTF 21、FFA 51、KOTH 63、TDM 62 份地图配置（共 197 份，另含变体）。
+当前轮换与投票池为 196 张，排除了最初示例地图的名称（PublicMaps 的同名 Harb 也排除）。
+Airship Battle、Harb、Race for Victory、The Fenland、Warlock 不再参与轮换或投票。
 这些地图位于 `maps/PublicMaps/`；请保留各地图的 LICENSE.txt / NOTICE.txt。
 比赛结束 5 秒后提供最多 5 张投票候选地图；点击投票书选择，或使用 `/votenext 地图名`。
 `/votebook` 可以重新打开投票书。切图倒计时为 35 秒，提前 5 秒预载下一张地图时完成计票。

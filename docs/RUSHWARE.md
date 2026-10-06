@@ -39,7 +39,9 @@ MC|Brand、Forge 声明、客户端自行上报的版本均不能作为可信验
 当前包导入了 OvercastCommunity/PublicMaps 的 KOTF 21、FFA 51、KOTH 63、TDM 62 份地图配置，
 共 197 份。源码版本为 `0d9ed9ccf57343e683a05c0b9a0c8a476460705f`，地图复制在 `server-package/maps/PublicMaps/`，
 共享 includes 在 `server-package/plugins/PGM/includes/`；保留各地图的许可证和通知文件。
-原有 5 张示例地图保留，但自动轮换的 `publicmaps` 池仅选用这四类地图。
+原有 5 张示例地图仅保留文件，地图加载目录限定为 `maps/PublicMaps`。
+`deployment/map-pool-exclusions.json` 排除 Airship Battle、Harb、Race for Victory、The Fenland、Warlock。
+由于 PublicMaps 中也有同名 Harb，投票池实际为 196 张；Harb KotF 和 Hallowed Harb 是不同地图，保留在池中。
 
 `map.pools` 指向 `map-pools.yml`，池类型为 `voted`，比赛结束 5 秒后提供最多 5 个候选项。
 切图倒计时 35 秒，预载提前 5 秒决定下一张地图。投票采用 PGM 内置的最高票选择机制。
@@ -52,7 +54,8 @@ MC|Brand、Forge 声明、客户端自行上报的版本均不能作为可信验
 打包脚本在 `.local/PublicMaps/kotf` 存在时自动导入这些地图。
 
 验证：独立 SportPaper 实例成功加载 269 张地图（含变体与 5 张示例地图），
-`publicmaps` 池解析出 197 张，实际结束比赛后生成 5 项投票，正常切换到下一张地图。
+初始 `publicmaps` 池解析出 197 张，实际结束比赛后生成 5 项投票，正常切换到下一张地图。
+后续按用户要求排除原始示例地图，当前池为 196 张，原始 5 个名称均不参与轮换或投票。
 
 Guard 还检查正版认证、SportPaper 内核、PGM 是否启用，并拒绝安装 ViaVersion、ViaBackwards、ViaRewind、ProtocolSupport。
 启动脚本仅允许 PGM 和 RushwareGuard 两个插件；接入验证插件时需审查并扩展该名单。

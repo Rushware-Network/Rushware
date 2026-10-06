@@ -25,6 +25,8 @@ foreach ($mode in $modes) {
     }
 }
 if (($names | Select-Object -Unique).Count -ne $names.Count) { throw 'Duplicate map names require manual review.' }
+$excludedNames = Get-Content (Join-Path $ProjectRoot 'deployment/map-pool-exclusions.json') -Raw | ConvertFrom-Json
+$poolNames = @($names | Where-Object { $_ -cnotin $excludedNames })
 $includesRoot = Join-Path $ServerRoot 'plugins/PGM/includes'
 $sourceIncludes = Get-ChildItem -LiteralPath (Join-Path $SourceRoot 'includes') -File
 foreach ($include in $sourceIncludes) {
@@ -64,14 +66,15 @@ $pool = @(
     '      persist: true',
     '    maps:'
 )
-$pool += $names | Sort-Object | ForEach-Object { "      - '" + $_.Replace("'", "''") + "'" }
+$pool += $poolNames | Sort-Object | ForEach-Object { "      - '" + $_.Replace("'", "''") + "'" }
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText($poolPath, ($pool -join "`n") + "`n", $utf8)
 $config = [regex]::Replace($config, '(?m)^  (?:#\s*)?pools:.*$', '  pools: "map-pools.yml"')
+$config = [regex]::Replace($config, '(?m)^    - "maps"\r?$', '    - "maps/PublicMaps"')
 [System.IO.File]::WriteAllText($configPath, $config, $utf8)
 $revision = & git -C $SourceRoot rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Could not read the PublicMaps revision.' }
-$manifest = [ordered]@{ repository='https://github.com/OvercastCommunity/PublicMaps'; commit=$revision; mapCount=$names.Count; categories=$counts; voting='voted'; pollDelay='5s'; voteOptions=5; cycleTime='35s' }
+$manifest = [ordered]@{ repository='https://github.com/OvercastCommunity/PublicMaps'; commit=$revision; mapCount=$names.Count; poolMapCount=$poolNames.Count; excludedMapNames=$excludedNames; categories=$counts; voting='voted'; pollDelay='5s'; voteOptions=5; cycleTime='35s' }
 [System.IO.File]::WriteAllText((Join-Path $ServerRoot 'PUBLICMAPS.json'), ($manifest | ConvertTo-Json -Depth 4) + "`n", $utf8)
 Write-Host "Imported $($names.Count) PublicMaps maps and their shared includes. Restart the server to enable the voted pool."
 Write-Host "Previous configuration backed up in $backupRoot"

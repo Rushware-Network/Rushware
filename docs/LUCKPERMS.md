@@ -13,10 +13,11 @@
 运行 JDK 仍为 25。首次启动生成 LuckPerms 默认配置和本地 H2 数据库，随后安装保留已有配置和数据。
 这些数据库、插件二进制和运行配置不提交 Git。
 
-当前不创建自定义组、不分配玩家、不设置头衔、不修改 PGM `groups` 配置。
+现已按用户确认配置 admin/sponsor/supporter/default 四组，投票倍率为 10/5/3/1。
+尚未给任何玩家分配特殊组，也未设置三个特殊组的头衔。详见 [权限规则](PERMISSION_GROUPS.md)。
 LuckPerms 管理权限和组继承；目前 PGM 通过 `pgm.group.<组名>` 判定分组，
 头衔由 PGM `groups` 的 prefix/suffix 显示，不会自动读取 LuckPerms 元数据。
-后续讨论分组和头衔设计后再配置，或开发直接读取 LuckPerms 头衔的适配器。
+后续讨论头衔设计后再配置，或开发直接读取 LuckPerms 头衔的适配器。
 当前权限节点方案不需要 Vault。原版 OP、正版认证及 Guard 白名单准入继续沿用现有配置。
 
 官方说明：https://luckperms.net/wiki/Installation

@@ -12,7 +12,12 @@ dependencies {
     implementation(project(":util"))
     runtimeOnly(project(":platform-sportpaper")) { exclude("*") }
     runtimeOnly(project(":platform-modern")) { exclude("*") }
+    testImplementation("io.papermc.paper:paper-api:26.2.build.+")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
+
+tasks.withType<Test>().configureEach { useJUnitPlatform() }
 
 
 tasks.named<ShadowJar>("shadowJar") {

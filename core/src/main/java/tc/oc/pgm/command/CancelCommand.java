@@ -2,6 +2,7 @@ package tc.oc.pgm.command;
 
 import static net.kyori.adventure.text.Component.translatable;
 import static tc.oc.pgm.util.player.PlayerComponent.player;
+import static tc.oc.pgm.util.text.TextException.exception;
 
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.command.CommandSender;
@@ -26,6 +27,7 @@ public final class CancelCommand {
   @Permission(Permissions.STOP)
   public void cancel(CommandSender sender, Audience audience, Match match) {
     if (RestartManager.isQueued()) {
+      if (!sender.hasPermission(Permissions.RESTART)) throw exception("misc.noPermission");
       match.callEvent(new CancelRestartEvent());
       audience.sendMessage(translatable("admin.cancelRestart.restartUnqueued", NamedTextColor.RED));
       return;

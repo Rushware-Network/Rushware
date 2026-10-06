@@ -16,7 +16,8 @@ public interface Permissions {
 
   // Individual permission nodes
   String START = ROOT + ".start"; // Start and cycle matches
-  String STOP = ROOT + ".stop"; // Stop matches and restart the server
+  String STOP = ROOT + ".stop"; // Stop matches and cancel match countdowns
+  String RESTART = ROOT + ".restart"; // Queue or cancel server restarts
   String SETNEXT = ROOT + ".setnext"; // Change the rotation and maps
   String ADMINCHAT = ROOT + ".adminchat"; // Secret chat with other operators
   String GAMEPLAY = ROOT + ".gameplay"; // Edit gameplay such as time limits, destroyables, modes
@@ -75,6 +76,7 @@ public interface Permissions {
           .put(PREMIUM.getName(), true)
           .put(START, true)
           .put(STOP, true)
+          .put(RESTART, true)
           .put(SETNEXT, true)
           .put(ADMINCHAT, true)
           .put(RESIZE, true)

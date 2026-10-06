@@ -10,7 +10,7 @@ $lock = Get-Content (Join-Path $ProjectRoot 'deployment/dependencies.lock.json')
 if ((Get-FileHash -LiteralPath (Join-Path $RuntimeRoot 'SportPaper.jar') -Algorithm SHA256).Hash -ne $lock.sportpaper.sha256) {
     throw 'SportPaper checksum mismatch.'
 }
-foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
+foreach ($name in @('PGM.jar', 'RushwareGuard.jar', 'RushwareModeration.jar')) {
     if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot "build/libs/$name"))) { throw 'Run Build.ps1 first.' }
 }
 $null = New-Item -ItemType Directory -Path $packageRoot, "$packageRoot/plugins/PGM", "$packageRoot/plugins/RushwareGuard", "$packageRoot/maps", "$packageRoot/licenses"
@@ -19,7 +19,7 @@ $icon = Join-Path $ProjectRoot 'assets/branding/server-icon.png'
 if (Test-Path -LiteralPath $icon) {
     Copy-Item -LiteralPath $icon -Destination (Join-Path $packageRoot 'server-icon.png')
 }
-foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
+foreach ($name in @('PGM.jar', 'RushwareGuard.jar', 'RushwareModeration.jar')) {
     Copy-Item -LiteralPath (Join-Path $ProjectRoot "build/libs/$name") -Destination "$packageRoot/plugins/$name"
 }
 foreach ($name in @('server.properties', 'sportpaper.yml', 'dependencies.lock.json')) {
@@ -43,6 +43,7 @@ Set-Content -LiteralPath "$packageRoot/BUILD.txt" -Encoding ASCII -Value @("Rush
 Write-Host "Standalone local test package created: $packageRoot"
 & "$PSScriptRoot/Install-WorldEdit.ps1" -ServerRoot $packageRoot
 & "$PSScriptRoot/Install-LuckPerms.ps1" -ServerRoot $packageRoot
+& "$PSScriptRoot/Prepare-PermissionGroups.ps1" -ServerRoot $packageRoot
 if (Test-Path -LiteralPath (Join-Path $ProjectRoot '.local/PublicMaps/kotf')) {
     & "$PSScriptRoot/Import-PublicMaps.ps1" -ServerRoot $packageRoot
     & "$PSScriptRoot/Import-TouchdownMaps.ps1" -ServerRoot $packageRoot

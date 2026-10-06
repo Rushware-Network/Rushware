@@ -1,0 +1,22 @@
+# Insert before PGM's default group. Titles are intentionally unset.
+  admin:
+    observer-permissions:
+      - "+pgm.start"
+      - "+pgm.stop"
+      - "+pgm.setnext"
+      - "+pgm.resize"
+      - "+pgm.join.force"
+      - "+pgm.join.choose"
+      - "+pgm.vanish"
+      - "+pgm.defuse"
+    participant-permissions:
+      - "-pgm.start"
+      - "-pgm.stop"
+      - "-pgm.setnext"
+      - "-pgm.resize"
+      - "-pgm.join.force"
+      - "-pgm.join.choose"
+      - "-pgm.vanish"
+      - "-pgm.defuse"
+  sponsor: {}
+  supporter: {}

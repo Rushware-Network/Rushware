@@ -19,7 +19,7 @@ public final class RestartCommand {
 
   @Command("restart|queuerestart|qr [duration]")
   @CommandDescription("Restart the server")
-  @Permission(Permissions.STOP)
+  @Permission(Permissions.RESTART)
   public void restart(
       Audience audience,
       Match match,

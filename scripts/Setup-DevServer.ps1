@@ -41,12 +41,13 @@ $eula = Join-Path $RuntimeRoot 'eula.txt'
 if (-not (Test-Path -LiteralPath $eula)) {
     Set-Content -LiteralPath $eula -Encoding ASCII -Value @('# Read https://aka.ms/MinecraftEULA before accepting.', 'eula=false')
 }
-foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
+foreach ($name in @('PGM.jar', 'RushwareGuard.jar', 'RushwareModeration.jar')) {
     $artifact = Join-Path $ProjectRoot "build/libs/$name"
     if (-not (Test-Path -LiteralPath $artifact)) { throw "Missing $name. Run scripts/Build.ps1 first." }
     Copy-Item -LiteralPath $artifact -Destination (Join-Path $RuntimeRoot "plugins/$name") -Force
 }
 & "$PSScriptRoot/Install-WorldEdit.ps1" -ServerRoot $RuntimeRoot
 & "$PSScriptRoot/Install-LuckPerms.ps1" -ServerRoot $RuntimeRoot
+& "$PSScriptRoot/Prepare-PermissionGroups.ps1" -ServerRoot $RuntimeRoot
 Write-Host 'Dev server prepared in runtime/. Strict admission stays closed until a trusted verifier is implemented.'
 Write-Host 'Read the Minecraft EULA and accept it in runtime/eula.txt before using Start-DevServer.ps1.'

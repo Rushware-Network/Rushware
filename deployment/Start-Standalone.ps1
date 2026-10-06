@@ -8,7 +8,7 @@ try {
     if (-not (Test-Path -LiteralPath $javaExe) -or -not (Test-Path -LiteralPath $release)) { throw 'Invalid JDK directory.' }
     if (-not (Select-String -LiteralPath $release -Pattern '^JAVA_VERSION="25[.\"]' -Quiet)) { throw 'JDK 25 is required.' }
     $lock = Get-Content (Join-Path $PSScriptRoot 'dependencies.lock.json') -Raw | ConvertFrom-Json
-    foreach ($name in @('SportPaper.jar', 'plugins/PGM.jar', 'plugins/RushwareGuard.jar', 'eula.txt')) {
+    foreach ($name in @('SportPaper.jar', 'plugins/PGM.jar', 'plugins/RushwareGuard.jar', 'plugins/RushwareModeration.jar', 'eula.txt')) {
         if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot $name))) { throw "Missing $name" }
     }
     if (-not (Select-String -LiteralPath (Join-Path $PSScriptRoot 'eula.txt') -Pattern '^eula=true\s*$' -Quiet)) {
@@ -22,7 +22,7 @@ try {
         throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
     }
     foreach ($plugin in (Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'plugins') -Filter '*.jar')) {
-        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar', 'LuckPerms.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
+        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'RushwareModeration.jar', 'WorldEdit.jar', 'LuckPerms.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
     }
     if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'plugins/LuckPerms.jar')) -or
         (Get-FileHash -LiteralPath (Join-Path $PSScriptRoot 'plugins/LuckPerms.jar') -Algorithm SHA256).Hash -ne $lock.luckperms.sha256) {

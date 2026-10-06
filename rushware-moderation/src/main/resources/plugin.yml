@@ -1,0 +1,20 @@
+name: RushwareModeration
+version: 0.1.0-SNAPSHOT
+main: dev.rushware.moderation.RushwareModerationPlugin
+depend: [PGM]
+commands:
+  warn:
+    permission: pgm.warn
+    usage: /warn <player> [reason]
+  mute:
+    permission: pgm.mute
+    usage: /mute <player> [reason]
+  unmute:
+    permission: pgm.mute
+    usage: /unmute <player>
+  freeze:
+    permission: pgm.freeze
+    usage: /freeze <player>
+  unfreeze:
+    permission: pgm.freeze
+    usage: /unfreeze <player>

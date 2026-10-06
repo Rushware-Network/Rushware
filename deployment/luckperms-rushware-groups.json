@@ -1,0 +1,376 @@
+{
+    "metadata":  {
+                     "generatedBy":  "Rushware deployment",
+                     "description":  "Approved group policy; no titles or player assignments"
+                 },
+    "groups":  {
+                   "default":  {
+                                   "nodes":  [
+                                                 {
+                                                     "key":  "weight.0",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.group.default",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.default",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.2",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.3",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.4",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.5",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.6",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.7",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.8",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.9",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.10",
+                                                     "value":  false
+                                                 }
+                                             ]
+                               },
+                   "admin":  {
+                                 "nodes":  [
+                                               {
+                                                   "key":  "group.default",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "weight.100",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.group.admin",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.vote.extra.10",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.full",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.staff",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.adminchat",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.kick",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.warn",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.mute",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.ban",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.freeze",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.inventory",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.list",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.version",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.plugins",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "pgm.restart",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.reload",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.debug",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.dev",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.mod",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.premium",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "pgm.gameplay",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "luckperms.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.stop",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.op",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.deop",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.gamemode",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.give",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.setblock",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.fill",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.clone",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.summon",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.tp",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "minecraft.command.execute",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.stop",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.restart",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.reload",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.op",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.deop",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.whitelist",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.gamemode",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.give",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.teleport",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "spigot.command.restart",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.wand",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.selection.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.region.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.clipboard.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.brush.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.tool.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.scripting.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.history.*",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.superpickaxe",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "worldedit.reload",
+                                                   "value":  false
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.kick",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.ban.player",
+                                                   "value":  true
+                                               },
+                                               {
+                                                   "key":  "bukkit.command.unban.player",
+                                                   "value":  true
+                                               }
+                                           ]
+                             },
+                   "sponsor":  {
+                                   "nodes":  [
+                                                 {
+                                                     "key":  "group.default",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "weight.50",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.group.sponsor",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.vote.extra.5",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.full",
+                                                     "value":  true
+                                                 },
+                                                 {
+                                                     "key":  "pgm.join.choose",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.join.force",
+                                                     "value":  false
+                                                 },
+                                                 {
+                                                     "key":  "pgm.premium",
+                                                     "value":  false
+                                                 }
+                                             ]
+                               },
+                   "supporter":  {
+                                     "nodes":  [
+                                                   {
+                                                       "key":  "group.default",
+                                                       "value":  true
+                                                   },
+                                                   {
+                                                       "key":  "weight.30",
+                                                       "value":  true
+                                                   },
+                                                   {
+                                                       "key":  "pgm.group.supporter",
+                                                       "value":  true
+                                                   },
+                                                   {
+                                                       "key":  "pgm.vote.extra.3",
+                                                       "value":  true
+                                                   },
+                                                   {
+                                                       "key":  "pgm.full",
+                                                       "value":  true
+                                                   },
+                                                   {
+                                                       "key":  "pgm.join.choose",
+                                                       "value":  false
+                                                   },
+                                                   {
+                                                       "key":  "pgm.join.force",
+                                                       "value":  false
+                                                   },
+                                                   {
+                                                       "key":  "pgm.premium",
+                                                       "value":  false
+                                                   }
+                                               ]
+                                 }
+               }
+}

@@ -202,7 +202,7 @@ public class MapPoll {
   /**
    * Counts the number of votes for a set of player UUIDs. Players with the "pgm.vote.extra"
    * permission node will have their vote count doubled. To provide a custom vote value,
-   * "pgm.vote.extra.#" can be used for the range of 2 to 5.
+   * "pgm.vote.extra.#" can be used from 2 through the configured maximum vote multiplier.
    *
    * @param uuids The UUIDs of the players who voted.
    * @return The number of votes counted.

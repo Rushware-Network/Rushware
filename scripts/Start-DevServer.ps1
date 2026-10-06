@@ -1,6 +1,6 @@
 . "$PSScriptRoot/Common.ps1"
 $javaExe = Get-RushwareJava
-foreach ($name in @('SportPaper.jar', 'plugins/PGM.jar', 'plugins/RushwareGuard.jar', 'server.properties', 'eula.txt')) {
+foreach ($name in @('SportPaper.jar', 'plugins/PGM.jar', 'plugins/RushwareGuard.jar', 'plugins/RushwareModeration.jar', 'server.properties', 'eula.txt')) {
     if (-not (Test-Path -LiteralPath (Join-Path $RuntimeRoot $name))) { throw "Missing $name. Run Setup-DevServer.ps1 first." }
 }
 if (-not (Select-String -LiteralPath (Join-Path $RuntimeRoot 'eula.txt') -Pattern '^eula=true\s*$' -Quiet)) {
@@ -16,7 +16,7 @@ if (-not (Test-Path -LiteralPath (Join-Path $RuntimeRoot 'plugins/WorldEdit.jar'
     throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
 }
 foreach ($plugin in $plugins) {
-    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar', 'LuckPerms.jar')) {
+    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'RushwareModeration.jar', 'WorldEdit.jar', 'LuckPerms.jar')) {
         throw "Unreviewed plugin $($plugin.Name). Review admission compatibility before extending this allowlist."
     }
 }

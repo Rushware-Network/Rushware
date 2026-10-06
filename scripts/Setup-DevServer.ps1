@@ -47,5 +47,6 @@ foreach ($name in @('PGM.jar', 'RushwareGuard.jar')) {
     Copy-Item -LiteralPath $artifact -Destination (Join-Path $RuntimeRoot "plugins/$name") -Force
 }
 & "$PSScriptRoot/Install-WorldEdit.ps1" -ServerRoot $RuntimeRoot
+& "$PSScriptRoot/Install-LuckPerms.ps1" -ServerRoot $RuntimeRoot
 Write-Host 'Dev server prepared in runtime/. Strict admission stays closed until a trusted verifier is implemented.'
 Write-Host 'Read the Minecraft EULA and accept it in runtime/eula.txt before using Start-DevServer.ps1.'

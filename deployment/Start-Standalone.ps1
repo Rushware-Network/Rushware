@@ -22,7 +22,11 @@ try {
         throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
     }
     foreach ($plugin in (Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'plugins') -Filter '*.jar')) {
-        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
+        if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar', 'LuckPerms.jar')) { throw "Unreviewed plugin: $($plugin.Name)" }
+    }
+    if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'plugins/LuckPerms.jar')) -or
+        (Get-FileHash -LiteralPath (Join-Path $PSScriptRoot 'plugins/LuckPerms.jar') -Algorithm SHA256).Hash -ne $lock.luckperms.sha256) {
+        throw 'LuckPerms is missing or its checksum differs from dependencies.lock.json.'
     }
     Push-Location $PSScriptRoot
     try {

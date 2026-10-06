@@ -16,9 +16,13 @@ if (-not (Test-Path -LiteralPath (Join-Path $RuntimeRoot 'plugins/WorldEdit.jar'
     throw 'WorldEdit is missing or its checksum differs from dependencies.lock.json.'
 }
 foreach ($plugin in $plugins) {
-    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar')) {
+    if ($plugin.Name -notin @('PGM.jar', 'RushwareGuard.jar', 'WorldEdit.jar', 'LuckPerms.jar')) {
         throw "Unreviewed plugin $($plugin.Name). Review admission compatibility before extending this allowlist."
     }
+}
+if (-not (Test-Path -LiteralPath (Join-Path $RuntimeRoot 'plugins/LuckPerms.jar')) -or
+    (Get-FileHash -LiteralPath (Join-Path $RuntimeRoot 'plugins/LuckPerms.jar') -Algorithm SHA256).Hash -ne $lock.luckperms.sha256) {
+    throw 'LuckPerms is missing or its checksum differs from dependencies.lock.json.'
 }
 Push-Location $RuntimeRoot
 try {

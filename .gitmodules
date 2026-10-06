@@ -1,3 +1,6 @@
 [submodule "vendor/worldedit"]
 	path = vendor/worldedit
 	url = https://github.com/EngineHub/WorldEdit.git
+[submodule "vendor/luckperms"]
+	path = vendor/luckperms
+	url = https://github.com/LuckPerms/LuckPerms.git

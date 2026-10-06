@@ -37,5 +37,13 @@
                       "version":  "6.1.9",
                       "url":  "https://mediafilez.forgecdn.net/files/2597/538/worldedit-bukkit-6.1.9.jar",
                       "sha256":  "5a7b88f6f75b4a0b6efd47ae03e9c26a2036ecd122b03a45ca635dde386d6186"
+                  },
+    "luckperms":  {
+                      "repository":  "https://github.com/LuckPerms/LuckPerms.git",
+                      "commit":  "5fc3d583c412854e050b1e4ba8aa5036d8daf982",
+                      "version":  "5.5.87",
+                      "platform":  "bukkit",
+                      "url":  "https://download.luckperms.net/1674/bukkit/loader/LuckPerms-Bukkit-5.5.87.jar",
+                      "sha256":  "09d07b68965717976d2bab2f8d10436676f7c68d90bf6d24628cc0e5228bf406"
                   }
 }

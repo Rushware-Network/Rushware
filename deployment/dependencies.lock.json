@@ -8,6 +8,11 @@
     "url": "https://repo.pgm.fyi/snapshots/app/ashcon/sportpaper/1.8.8-R0.1-SNAPSHOT/sportpaper-1.8.8-R0.1-20260415.185524-1.jar",
     "sha256": "27887d70b45ca038fbbdccdc3e2b090699045cbe78ce1e27894e5fc2ca394188"
   },
+  "publicmaps": {
+    "repository": "https://github.com/OvercastCommunity/PublicMaps.git",
+    "commit": "0d9ed9ccf57343e683a05c0b9a0c8a476460705f",
+    "folders": ["kotf", "ffa", "koth", "tdm", "includes"]
+  },
   "maps": {
     "repository": "https://github.com/PGMDev/Maps.git",
     "commit": "aa5a20aa6169e5cbdca241045a26c8b59d6e3dc4"

@@ -20,5 +20,10 @@
 改成 `local-test: false` 并重启即可恢复严格模式，此时 1.8.9 也会被拒绝，直到实现可信验证组件。
 
 自带 PGMDev 的 5 张经典示例地图。地图作者保留权利，详见 `maps/README.md`。
+若已导入 PublicMaps，另有 KOTF 21、FFA 51、KOTH 63、TDM 62 份地图配置（共 197 份，另含变体）。
+这些地图位于 `maps/PublicMaps/`；请保留各地图的 LICENSE.txt / NOTICE.txt。
+比赛结束 5 秒后提供最多 5 张投票候选地图；点击投票书选择，或使用 `/votenext 地图名`。
+`/votebook` 可以重新打开投票书。切图倒计时为 35 秒，提前 5 秒预载下一张地图时完成计票。
+管理员可用 `/pools` 检查 `publicmaps` 投票池，或用 `/pool` 查看池中的地图。
 PGM 与 RushwareGuard 的许可证见 `licenses/`；源码版本记录在 `BUILD.txt`。
 源码项目来源：https://github.com/OvercastCommunity/PGM （本地 Rushware 修改源码在开发项目中）。

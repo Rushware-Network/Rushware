@@ -34,6 +34,26 @@ MC|Brand、Forge 声明、客户端自行上报的版本均不能作为可信验
 使用 1.8.9 正版账号连接 `127.0.0.1:25565` 进行玩法验证；其他 1.8.x 也可能被接受。
 详细步骤见 `server-package/README.md`。EULA 仍由用户自行阅读和接受。
 
+### PublicMaps 与结束后投票
+
+当前包导入了 OvercastCommunity/PublicMaps 的 KOTF 21、FFA 51、KOTH 63、TDM 62 份地图配置，
+共 197 份。源码版本为 `0d9ed9ccf57343e683a05c0b9a0c8a476460705f`，地图复制在 `server-package/maps/PublicMaps/`，
+共享 includes 在 `server-package/plugins/PGM/includes/`；保留各地图的许可证和通知文件。
+原有 5 张示例地图保留，但自动轮换的 `publicmaps` 池仅选用这四类地图。
+
+`map.pools` 指向 `map-pools.yml`，池类型为 `voted`，比赛结束 5 秒后提供最多 5 个候选项。
+切图倒计时 35 秒，预载提前 5 秒决定下一张地图。投票采用 PGM 内置的最高票选择机制。
+玩家点击投票书，或用 `/votenext 地图名`；`/votebook` 重新打开书。
+
+配置模板见 `deployment/publicmaps-map-pools.yml`。
+复现时将锁文件对应的 PublicMaps 版本以稀疏检出下载到 `.local/PublicMaps`，
+检出 `includes kotf ffa koth tdm` 后运行 `scripts/Import-PublicMaps.ps1`。
+该脚本拒绝覆盖已有地图，修改配置前创建备份，并记录 `PUBLICMAPS.json`。
+打包脚本在 `.local/PublicMaps/kotf` 存在时自动导入这些地图。
+
+验证：独立 SportPaper 实例成功加载 269 张地图（含变体与 5 张示例地图），
+`publicmaps` 池解析出 197 张，实际结束比赛后生成 5 项投票，正常切换到下一张地图。
+
 Guard 还检查正版认证、SportPaper 内核、PGM 是否启用，并拒绝安装 ViaVersion、ViaBackwards、ViaRewind、ProtocolSupport。
 启动脚本仅允许 PGM 和 RushwareGuard 两个插件；接入验证插件时需审查并扩展该名单。
 PGM 声明依赖 Guard。部署时必须使用启动脚本并检查插件加载日志；Guard 加载失败时禁止开放服务器。

@@ -150,7 +150,7 @@ tablist:
 #         Finished = Red (&c)
 #
 # To disable, set to an empty string.
-motd: "&cRushware Network &8- &7mc.rushware.cn\n&a» &b{1} &a«"
+motd: "&4&lRushware&6 [Beta] &8- &7mc.rushware.cn\n&a» &b{1} &a«"
 
 # A list of player groups, defined in order of priority, with highest on top.
 #

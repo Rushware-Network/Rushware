@@ -24,7 +24,7 @@
       - "-pgm.vanish"
       - "-pgm.defuse"
   sponsor:
-    prefix: "&5&l✳⁺⁺&r "
+    prefix: "&5&l✳&r "
     suffix: ""
     display-name: "&5Sponsor"
   supporter:

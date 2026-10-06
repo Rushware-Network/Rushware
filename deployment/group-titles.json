@@ -1,5 +1,5 @@
 {
   "admin": { "prefix": "&b&l❑&r ", "display-name": "&bAdmin" },
-  "sponsor": { "prefix": "&5&l✳⁺⁺&r ", "display-name": "&5Sponsor" },
+  "sponsor": { "prefix": "&5&l✳&r ", "display-name": "&5Sponsor" },
   "supporter": { "prefix": "&d&l✳&r ", "display-name": "&dSupporter" }
 }

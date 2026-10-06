@@ -11,5 +11,5 @@
 - Do not commit server binaries, player data, maps, credentials or runtime configuration. Templates belong in `deployment/`.
 - Verify relevant code with Gradle tests and run `scripts/Build.ps1` for release changes.
 - Do not accept Minecraft EULA or publish credentials on the user's behalf.
-- Approved groups: admin 10 votes, sponsor 5, supporter 3, default 1. Sponsor/supporter may join full teams but cannot choose teams. Titles: admin aqua bold ❑, sponsor dark purple bold ✳⁺⁺, supporter light purple/pink bold ✳. Preserve name/team coloring separately.
+- Approved groups: admin 10 votes, sponsor 5, supporter 3, default 1. Sponsor/supporter may join full teams but cannot choose teams. Titles: admin aqua bold ❑, sponsor dark purple bold ✳, supporter light purple/pink bold ✳. Preserve name/team coloring separately.
 - Admin is not OP: explicit safe permissions only, no shutdown/restart, privilege management, whitelist changes, reload, creative/item spawning or WorldEdit editing. Admin may end matches and cycle maps while participating; other match controls, vanish and TNT defuse are observer-only. Keep pgm.stop separate from pgm.restart, and pgm.cycle separate from pgm.start.

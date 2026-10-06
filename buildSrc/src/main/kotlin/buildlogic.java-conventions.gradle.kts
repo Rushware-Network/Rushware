@@ -79,7 +79,8 @@ tasks {
 }
 
 spotless {
-    ratchetFrom = "origin/dev"
+    // Immutable Rushware upstream baseline; available even when a remote omits tags.
+    ratchetFrom = "ece3ab713884409ce5e2e5990d4f1a47346903f1"
     java {
         removeUnusedImports()
         trimTrailingWhitespace()

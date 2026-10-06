@@ -1,32 +1,5 @@
-Rushware
+PGM [![Build](https://github.com/PGMDev/PGM/actions/workflows/build.yml/badge.svg?branch=dev)](https://github.com/PGMDev/PGM/actions/workflows/build.yml) [![Crowdin](https://badges.crowdin.net/pgm/localized.svg)](https://crowdin.com/project/pgm) [![Discord](https://img.shields.io/discord/730855489767997511?color=blue&label=discord&logo=discord)](https://discord.gg/pEEcwTk)
 ===
-
-基于 [OvercastCommunity/PGM](https://github.com/OvercastCommunity/PGM) 的 Minecraft Java 1.8.9 PGM 服务器开发项目。
-
-- 玩法：使用 PGM 的地图、队伍、比赛目标与轮换系统。
-- 战斗：原生 SportPaper 1.8 内核，保留 1.8 系列战斗机制。
-- 开发：JDK 25、Gradle Wrapper，保留完整上游源码与历史。
-- 准入：目标是严格验证 1.8.9，验证组件未完成前默认拒绝所有登录。
-
-**协议号 47 不能区分 1.8 与 1.8.9。当前完成准入接口和拒绝逻辑，配套客户端/启动器验证留待后续开发。**
-
-```powershell
-.\scripts\Build.ps1
-.\scripts\Setup-DevServer.ps1
-# 阅读 EULA 后自行修改 runtime/eula.txt，再启动：
-.\scripts\Start-DevServer.ps1
-```
-
-构建产物在 `build/libs/`，开发服在 `runtime/`（默认仅监听本机）。
-详见 [开发与部署说明](docs/RUSHWARE.md)。
-
-目录：`core/`、`util/`、`platform/`、`server/` 为上游 PGM；`rushware-guard/` 为准入插件；
-`deployment/` 保存配置模板和依赖基线；`scripts/` 保存 Windows 开发脚本。
-
-保留上游 AGPL-3.0 许可证与 LICENSE_LINKING。下文为上游介绍，原文另存于 `docs/UPSTREAM_README.md`。
-
-Upstream PGM
-------------
 
 The original PvP Game Manager for Minecraft.
 

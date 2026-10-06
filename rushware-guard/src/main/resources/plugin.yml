@@ -1,0 +1,5 @@
+name: RushwareGuard
+main: dev.rushware.guard.RushwareGuardPlugin
+version: 0.1.0
+load: STARTUP
+description: Strict admission gate for Rushware Minecraft Java 1.8.9

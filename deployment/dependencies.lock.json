@@ -1,0 +1,15 @@
+{
+  "pgm": {
+    "repository": "https://github.com/OvercastCommunity/PGM.git",
+    "branch": "occ",
+    "commit": "ece3ab713884409ce5e2e5990d4f1a47346903f1"
+  },
+  "sportpaper": {
+    "url": "https://repo.pgm.fyi/snapshots/app/ashcon/sportpaper/1.8.8-R0.1-SNAPSHOT/sportpaper-1.8.8-R0.1-20260415.185524-1.jar",
+    "sha256": "27887d70b45ca038fbbdccdc3e2b090699045cbe78ce1e27894e5fc2ca394188"
+  },
+  "maps": {
+    "repository": "https://github.com/PGMDev/Maps.git",
+    "commit": "aa5a20aa6169e5cbdca241045a26c8b59d6e3dc4"
+  }
+}

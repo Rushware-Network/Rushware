@@ -73,3 +73,14 @@ default-maps/
 # Allow alternative server folders
 server-*/*
 
+# Rushware local server, secrets and local tooling
+/runtime/
+/.local/
+*.local.ps1
+.env
+.env.*
+!.env.example
+!gradlew.bat
+!deployment/server.properties
+!deployment/sportpaper.yml
+

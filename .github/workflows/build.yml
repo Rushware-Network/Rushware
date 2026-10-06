@@ -4,12 +4,13 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - dev
+      - main
+      - 'feature/**'
+      - 'fix/**'
 jobs:
   build:
     permissions:
       contents: read
-      packages: write
     runs-on: ubuntu-latest
     steps:
     - id: checkout
@@ -28,16 +29,12 @@ jobs:
     # along with having to trust a 2 MB obfuscated JS blob.
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
-    # Run "gradlew publish" for origin/dev and "gradlew build" for PRs or elsewhere
-    - name: Execute Gradle ${{ (github.repository == 'PGMDev/PGM' && github.ref == 'refs/heads/dev') && 'Publish' || 'Build' }}
-      run: ./gradlew ${{ (github.repository == 'PGMDev/PGM' && github.ref == 'refs/heads/dev') && 'publish' || 'build' }}
-      env:
-        GITHUB_TOKEN: ${{ (github.repository == 'PGMDev/PGM' && github.ref == 'refs/heads/dev') && secrets.GITHUB_TOKEN || '' }}
+    - name: Build and test Rushware
+      run: ./gradlew build
     - id: artifact
       name: Upload Jar
       uses: actions/upload-artifact@v7
       with:
-        name: PGM.jar
-        path: build/libs/PGM.jar
+        name: Rushware-plugins
+        path: build/libs/*.jar
         if-no-files-found: error
-        archive: false

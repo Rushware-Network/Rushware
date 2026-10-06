@@ -1,0 +1,16 @@
+spigot:
+  settings:
+    bungeecord: false
+  stats:
+    disable-saving: true
+    forced-stats:
+      achievement:
+        openInventory: 1
+paper:
+  settings:
+    empty-server-suspend: P100D
+  world-settings:
+    fix-cannons: true
+    optimize-explosions: true
+    game-mechanics:
+      disable-chest-cat-detection: true

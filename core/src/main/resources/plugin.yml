@@ -1,4 +1,5 @@
 name: PGM
+depend: [RushwareGuard]
 softdepend: [ViaVersion, packetevents]
 description: ${description}
 main: ${mainClass}

@@ -44,7 +44,8 @@ MC|Brand、Forge 声明、客户端自行上报的版本均不能作为可信验
 由于 PublicMaps 中也有同名 Harb，投票池实际为 196 张；Harb KotF 和 Hallowed Harb 是不同地图，保留在池中。
 
 `map.pools` 指向 `map-pools.yml`，池类型为 `voted`，比赛结束 5 秒后提供最多 5 个候选项。
-切图倒计时 35 秒，预载提前 5 秒决定下一张地图。投票采用 PGM 内置的最高票选择机制。
+YAML 设置切图倒计时 20 秒：剩余 15 秒开启投票，剩余 5 秒计票并揭示下一图。仅修改 YAML 配置，保留 PGM 原有代码。原版预载可能提前转场，单靠 YAML 无法保证严格到 0 秒才切图。投票采用 PGM 内置的最高票选择机制。
+已加入 CommunityMaps arcade 的 155 张原生 1.8 兼容地图，与 196 张 PublicMaps、24 张 touchdown 合计 375 张。MMB: Anthill、Random Items、Survive or Die: Oracle 要求 1.21，未加入投票。Santa's Express Delivery 通过 YAML 开启 `experiments.payload` 后加载。
 玩家点击投票书，或用 `/votenext 地图名`；`/votebook` 重新打开书。
 
 配置模板见 `deployment/publicmaps-map-pools.yml`。
@@ -70,7 +71,10 @@ PGM 声明依赖 Guard。部署时必须使用启动脚本并检查插件加载�
 .\scripts\Setup-DevServer.ps1
 ```
 
-产物：`build/libs/PGM.jar`、`build/libs/RushwareGuard.jar`。
+产物：`build/libs/PGM.jar`、`build/libs/RushwareGuard.jar`、`build/libs/RushwareModeration.jar`。
+`Build.ps1` 成功后自动将三个插件同步到已有的 `server-package/plugins/`，生成 `ARTIFACTS.json` 记录校验值，并更新已有的 `server-package.7z`；保留服务器配置和玩家数据。
+更新 `.7z` 需要安装 7-Zip，或将 [官方独立工具 7zr.exe](https://www.7-zip.org/download.html) 放在 `.local/tools/`。也可单独运行 `scripts/Sync-ServerPackage.ps1` 同步已构建产物。
+`scripts/Package-ServerZip.ps1` 生成 `server-package/server-package.zip`，校验插件哈希，包含配置、地图和权限数据库，排除旧压缩包、备份、日志及临时比赛世界。ZIP 已存在时，后续成功构建也会自动更新它。
 Setup 下载带 SHA-256 校验的固定 SportPaper，检出固定版本 PGMDev/Maps，安装插件和配置。
 地图保留各自许可证与作者信息。`runtime/` 只存本地数据，不进入 Git。
 示例地图不适用 PGM 的 AGPL 许可证，作者保留权利，详见 `runtime/maps/README.md`；不要据此假设可任意再发行。

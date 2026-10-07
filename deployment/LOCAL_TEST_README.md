@@ -25,7 +25,8 @@
 Airship Battle、Harb、Race for Victory、The Fenland、Warlock 不再参与轮换或投票。
 这些地图位于 `maps/PublicMaps/`；请保留各地图的 LICENSE.txt / NOTICE.txt。
 比赛结束 5 秒后提供最多 5 张投票候选地图；点击投票书选择，或使用 `/votenext 地图名`。
-`/votebook` 可以重新打开投票书。切图倒计时为 35 秒，提前 5 秒预载下一张地图时完成计票。
+`/votebook` 可以重新打开投票书。YAML 设置切图倒计时 20 秒：剩余 15 秒开启投票书，剩余 5 秒结算、揭示并预载下一张地图。原版 PGM 的预载可能在加载完成后提前转场，单靠 YAML 无法保证严格到 0 秒才切图；PGM 代码保持原样。
+当前部署图池包含 196 张 PublicMaps、24 张 CommunityMaps touchdown 和 155 张兼容 1.8 的 arcade 地图，共 375 张。arcade 的 MMB: Anthill、Random Items 和 Survive or Die: Oracle 要求 1.21，未加入投票；Santa's Express Delivery 需要 `experiments.payload: true`。
 管理员可用 `/pools` 检查 `publicmaps` 投票池，或用 `/pool` 查看池中的地图。
 PGM 与 RushwareGuard 的许可证见 `licenses/`；源码版本记录在 `BUILD.txt`。
 源码项目来源：https://github.com/OvercastCommunity/PGM （本地 Rushware 修改源码在开发项目中）。

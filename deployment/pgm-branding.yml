@@ -1,7 +1,7 @@
 # Merge these keys into plugins/PGM/config.yml; this is not a complete PGM configuration.
 sidebar:
   header: ""
-  footer: "&l&brushware.cn"
+  footer: "&b&lrushware.cn"
 tablist:
   left: ""
   right: ""

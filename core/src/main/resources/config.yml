@@ -130,7 +130,7 @@ stats:
 # Overrides the header and footer of the side bar.
 sidebar:
   header: "" # A header, disabled if empty.
-  footer: "&l&brushware.cn" # A footer, disabled if empty.
+  footer: "&b&lrushware.cn" # A footer, disabled if empty.
   
 # Customize text displayed in the footer of the tablist.
 # Color codes can be used ex. "&aHello World"  

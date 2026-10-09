@@ -130,7 +130,7 @@ stats:
 # Overrides the header and footer of the side bar.
 sidebar:
   header: "" # A header, disabled if empty.
-  footer: "" # A footer, disabled if empty.
+  footer: "&l&brushware.cn" # A footer, disabled if empty.
   
 # Customize text displayed in the footer of the tablist.
 # Color codes can be used ex. "&aHello World"  
@@ -150,7 +150,7 @@ tablist:
 #         Finished = Red (&c)
 #
 # To disable, set to an empty string.
-motd: "&4&lRushware&6 [Beta] &8- &7mc.rushware.cn\n&a» &b{1} &a«"
+motd: "\u00a7b\u00a7lRushware \u00a7f\u00a7lCommunity \u00a78|\u00a7f\u00a7l \u00a73PGM Server in \u00a7lAsia\n&a\u00bb &b{1} &a\u00ab"
 
 # A list of player groups, defined in order of priority, with highest on top.
 #

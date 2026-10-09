@@ -1,0 +1,8 @@
+# Merge these keys into plugins/PGM/config.yml; this is not a complete PGM configuration.
+sidebar:
+  header: ""
+  footer: "&l&brushware.cn"
+tablist:
+  left: ""
+  right: ""
+motd: "\u00a7b\u00a7lRushware \u00a7f\u00a7lCommunity \u00a78|\u00a7f\u00a7l \u00a73PGM Server in \u00a7lAsia\n&a\u00bb &b{1} &a\u00ab"

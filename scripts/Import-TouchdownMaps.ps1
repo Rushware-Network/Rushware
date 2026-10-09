@@ -50,3 +50,4 @@ $utf8 = New-Object Text.UTF8Encoding($false)
 $manifest = [ordered]@{repository=$lock.communitymaps.repository; commit=$revision; category='touchdown'; mapCount=$names.Count; mapNames=$names; pool='publicmaps'; voting='voted'}
 [IO.File]::WriteAllText((Join-Path $ServerRoot 'COMMUNITYMAPS.json'), ($manifest | ConvertTo-Json -Depth 4), $utf8)
 Write-Host "Imported $($names.Count) touchdown maps into the existing voted pool. Restart to apply. Backup: $backupRoot"
+& "$PSScriptRoot/Prune-LargeMaps.ps1" -ServerRoot $ServerRoot -Apply -SkipArchives

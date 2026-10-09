@@ -77,4 +77,5 @@ if ($LASTEXITCODE -ne 0) { throw 'Could not read the PublicMaps revision.' }
 $manifest = [ordered]@{ repository='https://github.com/OvercastCommunity/PublicMaps'; commit=$revision; mapCount=$names.Count; poolMapCount=$poolNames.Count; excludedMapNames=$excludedNames; categories=$counts; voting='voted'; pollDelay='5s'; voteOptions=5; cycleTime='35s' }
 [System.IO.File]::WriteAllText((Join-Path $ServerRoot 'PUBLICMAPS.json'), ($manifest | ConvertTo-Json -Depth 4) + "`n", $utf8)
 Write-Host "Imported $($names.Count) PublicMaps maps and their shared includes. Restart the server to enable the voted pool."
+& "$PSScriptRoot/Prune-LargeMaps.ps1" -ServerRoot $ServerRoot -Apply -SkipArchives
 Write-Host "Previous configuration backed up in $backupRoot"

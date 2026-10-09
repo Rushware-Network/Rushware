@@ -1,0 +1,1645 @@
+{
+  "maxPlayers": 24,
+  "variant": "default",
+  "capacity": "sum of ordinary team maxima, or FFA maximum; excludes overfill",
+  "sourcePoolCount": 375,
+  "retainedPoolCount": 110,
+  "removedMapCount": 265,
+  "removedMaps": [
+    {
+      "name": "2014: Rage FFA",
+      "capacity": 50,
+      "directory": "maps/PublicMaps/ffa/2014_rage_ffa",
+      "mapXmlSha256": "8be7c66b73ebf707ae013301c7a41ce632314f888b00aa43cd6de460c76c3dea"
+    },
+    {
+      "name": "6 Sided",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/kotf/6_sided",
+      "mapXmlSha256": "251033c6462f552f49a20f097d8abc253ede6c2e90c740e7fb9cdea1ff93eb96"
+    },
+    {
+      "name": "Adabat: Jungle Joyride",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/runner/adabat_jungle_joyride",
+      "mapXmlSha256": "3456092314e123e44ea6d53819b279343630147074eafa6973538cc0f7a22789"
+    },
+    {
+      "name": "Affinity",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/kotf/affinity",
+      "mapXmlSha256": "399d2875da9d0f9c0b72a6d29f55ca49adb9fa74fc49851cd48c78175079064a"
+    },
+    {
+      "name": "Afflicted",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/afflicted",
+      "mapXmlSha256": "c542e540eea7597e9fab2c028d39f60171dd9bb3656d45b7aa3b73e6c9671d7b"
+    },
+    {
+      "name": "Alligator Charge",
+      "capacity": 100,
+      "directory": "maps/CommunityMaps/arcade/infection/alligator_charge",
+      "mapXmlSha256": "02674a4d078f163f11f7361997c3def924573031164295065eb8c88b34676404"
+    },
+    {
+      "name": "Arabian Nightmare",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/tdm/standard/arabian_nightmare",
+      "mapXmlSha256": "6cc3659e21434fb19883224973c6c4fa744d53cc904d01d5eb5a75384a9eb326"
+    },
+    {
+      "name": "Arid Gold Land",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/arid_gold_land",
+      "mapXmlSha256": "a9582c94df6b74dc31c9dce77f03628530049f4d0d076a6c82949731546c66e8"
+    },
+    {
+      "name": "Artext",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/koth/artext",
+      "mapXmlSha256": "bb2cc27aa16e025469b33c5acfc2982b809e5a63d3bfa83bf55a37affc0a4ee0"
+    },
+    {
+      "name": "Aureola",
+      "capacity": 26,
+      "directory": "maps/PublicMaps/tdm/standard/aureola",
+      "mapXmlSha256": "2620f5e35e2e0e8fd598632c6f4962ac2e00b5d69b86b10062b9f3598c35784b"
+    },
+    {
+      "name": "Autunno",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/koth/autunno",
+      "mapXmlSha256": "871cd4b304ff9634576f3bae986d638efc9926a1459a3263876feb76f7847ba1"
+    },
+    {
+      "name": "Babylon",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/babylon",
+      "mapXmlSha256": "a8ccf010ede2222ea5585ef1722436482436acba235ca9b4d86ebe9d793616f9"
+    },
+    {
+      "name": "Badlands",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/koth/badlands",
+      "mapXmlSha256": "ecbe5322a30e1645e6b28671a137b4de7797a7144a6ef502235cb81e9d668d84"
+    },
+    {
+      "name": "Balls of Steel",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/balls_of_steel",
+      "mapXmlSha256": "1e4d917db7e2e4afe5e187bcf8476eafa506bce1a4727c2c51a91a8ca7ebb988"
+    },
+    {
+      "name": "Bed Rush: Anubis",
+      "capacity": 44,
+      "directory": "maps/CommunityMaps/arcade/standard/bed_rush_anubis",
+      "mapXmlSha256": "0854c3b9855770fb52685130d5e75c9f86d757cffd2008d550bccfa02275cb5a"
+    },
+    {
+      "name": "Bed Rush: Drakkar",
+      "capacity": 44,
+      "directory": "maps/CommunityMaps/arcade/standard/bed_rush_drakkar",
+      "mapXmlSha256": "d7e840acfb9c9d83c0c322b166056f092c3b167b462f81285d74bc09dc626584"
+    },
+    {
+      "name": "Bikini Bottom Runner",
+      "capacity": 56,
+      "directory": "maps/CommunityMaps/arcade/runner/bikini_bottom_runner",
+      "mapXmlSha256": "934cb05b9bc8e90f7202ec48ae634827e2a731beab6f020f909493a43d8da79d"
+    },
+    {
+      "name": "Bizarre Bazaar",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/kotf/bizarre_bazaar",
+      "mapXmlSha256": "3f3854323727d27a2f2cbf3261c795c11f14e5813ec184837d913735d5cf6f0b"
+    },
+    {
+      "name": "BlackBlack Reborn",
+      "capacity": 80,
+      "directory": "maps/CommunityMaps/arcade/standard/blackblack_reborn",
+      "mapXmlSha256": "98c088151c1f66ca9b1b3c72cb317ed2f3ff3861c8647476b339edb476058095"
+    },
+    {
+      "name": "BlockBlock",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/blockblock",
+      "mapXmlSha256": "4d4cf2f670a74d000268f23ff64998afb871f3ef2f8f45e2885ed14f01d811c6"
+    },
+    {
+      "name": "BlockGlitch",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/blockglitch",
+      "mapXmlSha256": "3cf5005001029adc1f97bcab2e8f76039b6aeb583ad6c152e317e05b5ff9ac71"
+    },
+    {
+      "name": "BlockGlitch 2: Electric Boogaloo",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/blockglitch_2_electric_boogaloo",
+      "mapXmlSha256": "093fb94f6c01d7b507aca15e37fb855eaaccfcf869967e2a7b11b3ef61347538"
+    },
+    {
+      "name": "BlockGlitch 3",
+      "capacity": 25,
+      "directory": "maps/CommunityMaps/arcade/standard/blockglitch_3",
+      "mapXmlSha256": "4a40c66b09bcf2eea9728e25a45b54991ca104c4476ea61c2578e52a5f670971"
+    },
+    {
+      "name": "BlockGlitch 4",
+      "capacity": 666,
+      "directory": "maps/CommunityMaps/arcade/standard/blockglitch_4",
+      "mapXmlSha256": "8407dd4c2bf22e7b6f00bad2e39485706d4612203a21c21abbb2cd3a05dae352"
+    },
+    {
+      "name": "Bomber Guys",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/standard/bomber_guys",
+      "mapXmlSha256": "da00a2d972530be04d216295505a5f82fba67ef9100670e245541e43677cef35"
+    },
+    {
+      "name": "Bow Spleef: Shogun",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/bow_spleef_shogun",
+      "mapXmlSha256": "154cb5f4c1a09439621d683a1ead3f50b83f29beeba6e09212a70838e158d4cc"
+    },
+    {
+      "name": "Brisked",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/koth/brisked",
+      "mapXmlSha256": "1326a24c012d8f1605a0101279034014b87be7921ca989710241f133a65bffe4"
+    },
+    {
+      "name": "Bulletwood",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/bulletwood",
+      "mapXmlSha256": "d42b1943b3ca83c8750dae3b00d7b6825fbe5dbd2fe29710685d878ed6b4a39b"
+    },
+    {
+      "name": "Cabin Fever",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/cabin_fever",
+      "mapXmlSha256": "003ae3eb29e477b6197227ea88c84599168ff5ef1739e140b5b3b3aca8745d17"
+    },
+    {
+      "name": "Cacti Mayhem Overdrive",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/cacti_mayhem_overdrive",
+      "mapXmlSha256": "e25639523188018bcb576eb42b371e4f41c0bf681bca0a7b0afd29af94e622d1"
+    },
+    {
+      "name": "Cacti the Wool",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/cacti_the_wool",
+      "mapXmlSha256": "20b4a97b5cacfb69ed849ed93467cd0b8ef29097c86a324df2650820216c44f2"
+    },
+    {
+      "name": "Cairo TDM",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/cairo_tdm",
+      "mapXmlSha256": "f6d288f83fe345c9443a883d43fe4dbe691d4f836e8efa3bd0651ef710eda0cd"
+    },
+    {
+      "name": "Calico",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/koth/calico",
+      "mapXmlSha256": "e9312fad1c1f4993a1a70868122449447fb5f917baf8c236655b41e9387d0a3f"
+    },
+    {
+      "name": "Canyon: TDM",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/tdm/standard/canyon_tdm",
+      "mapXmlSha256": "010743e2e5b6615c76885121fb7549a7cc11b168ed0cf2bf2367aa814546ed7a"
+    },
+    {
+      "name": "Cat's Cradle",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/cats_cradle",
+      "mapXmlSha256": "fb14bf37308912fb9e02fd8c42ac901f33d06d4b7037afc3db801da3d2d76380"
+    },
+    {
+      "name": "Catacomb",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/tdm/standard/catacomb",
+      "mapXmlSha256": "1ff2263ec6ca5cd3eef15d3e73189de68cc214602a645ad331c16dcd825062ee"
+    },
+    {
+      "name": "Cathedral EndeRAGE",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/tdm/standard/cathedral_enderage",
+      "mapXmlSha256": "6d87c7c9a79e747c8d15d05060ebd017669ac78c6c77c9b459345e64a253c3aa"
+    },
+    {
+      "name": "Cavum",
+      "capacity": 56,
+      "directory": "maps/PublicMaps/tdm/standard/cavum",
+      "mapXmlSha256": "2969e73b963a7a96e97eb4f2721f1e27b558a59c18658bb6415186b681e20fa6"
+    },
+    {
+      "name": "Chemical Reaction",
+      "capacity": 50,
+      "directory": "maps/PublicMaps/tdm/standard/chemical_reaction",
+      "mapXmlSha256": "30c508b61a8384bc56c3aa7bdb861947f3f82c773d0d95524184460be83dda7c"
+    },
+    {
+      "name": "Chromatic Conquest",
+      "capacity": 48,
+      "directory": "maps/CommunityMaps/arcade/standard/chromatic_conquest",
+      "mapXmlSha256": "6bc632cfdc6429c5a96d1a9bf7c11706e54c9c971084b675e760bad3bf980807"
+    },
+    {
+      "name": "Clutter",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/ffa/clutter",
+      "mapXmlSha256": "a467b131a9bd72da0286c1eac9f5a7ad02c952c0e273b3e4c9d07ad976cbeb13"
+    },
+    {
+      "name": "Concourse",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/kotf/concourse",
+      "mapXmlSha256": "cbf3e778eafd273e900c6526d270bbcf2dd1e2a2d8cffeec3d979b0c0d382304"
+    },
+    {
+      "name": "Deathrun: Aperture",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/runner/deathrun_aperture",
+      "mapXmlSha256": "e0c7cdbfe53ca7b19677fa0b7a9f98cd80ed6a1fd1a19efb7b672a3373101ab2"
+    },
+    {
+      "name": "Desert Sanctuary",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/kotf/desert_sanctuary",
+      "mapXmlSha256": "fd7ad218a7ccb97ffb0d12d27a67421005d6060360a21a3769d64d9663b5c494"
+    },
+    {
+      "name": "Diablo",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/diablo",
+      "mapXmlSha256": "a128addaf4859e607760ebf273242bacbf2b0d4adf0c08a231d4aafc9b97259d"
+    },
+    {
+      "name": "Discipline",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/discipline",
+      "mapXmlSha256": "650cdb317da4c1d0737624fcf7f5239b9fdcc54757c9ca935c0e4bb3eb7adc0e"
+    },
+    {
+      "name": "Do Not Press the Button for Two Minutes",
+      "capacity": 103,
+      "directory": "maps/CommunityMaps/arcade/standard/do_not_press_the_button_for_two_minutes",
+      "mapXmlSha256": "af16c1cbddd7a8632d53a785947a50df290b1835fc0181872525a79d9b8b135f"
+    },
+    {
+      "name": "Dodge Ball Stadium",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/dodge_ball_stadium",
+      "mapXmlSha256": "5aac5bf3b5bb5efb3e376fa8c81934ab284b04af2f608db0da28c1236b78c912"
+    },
+    {
+      "name": "Donut Spleef",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/donut_spleef",
+      "mapXmlSha256": "4080ae2b1918188020b65413ef2734e8ee444d32451d00e6ed54cc94f8c51caa"
+    },
+    {
+      "name": "Downtown",
+      "capacity": 36,
+      "directory": "maps/PublicMaps/koth/downtown",
+      "mapXmlSha256": "97e71defebcfa0a2240e5f41b2a77fd6ca6d20a60471ec3c63d0faa213d471ea"
+    },
+    {
+      "name": "Drow's Crevice II",
+      "capacity": 50,
+      "directory": "maps/PublicMaps/tdm/standard/drows_crevice_ii",
+      "mapXmlSha256": "622628351ad9bd3b34c6e3a9c229fe124304d579f137142534522bf633ccbf01"
+    },
+    {
+      "name": "Dust",
+      "capacity": 26,
+      "directory": "maps/PublicMaps/tdm/standard/dust",
+      "mapXmlSha256": "0dbf3574029f490e610f1bb6fa4b751c62e32e73d23b6429a4820af4e77b6391"
+    },
+    {
+      "name": "Eldritch Trials",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/eldritch_trials",
+      "mapXmlSha256": "4f3c81c25cd74299e2097751b5fe747f27e8676b45e1cfad3a263256a5b792da"
+    },
+    {
+      "name": "Elysium",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/ffa/elysium",
+      "mapXmlSha256": "9b43810ccdabb0406e62175eb9249f48f45846a234d2c6a18ab6e2438cb7a354"
+    },
+    {
+      "name": "Equinox",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/equinox",
+      "mapXmlSha256": "2e6cf6495e423bd91a3affacbc0ac48066ad5e4851144ed0d2943a7259873c0e"
+    },
+    {
+      "name": "Escondite: edición latina",
+      "capacity": 55,
+      "directory": "maps/CommunityMaps/arcade/standard/escondite_edicion_latina",
+      "mapXmlSha256": "03a465cb55a073b0da4b20ab63a4c648ed62c2ba3a3e66150d117894e4216538"
+    },
+    {
+      "name": "Eternal Virus",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/eternal_virus",
+      "mapXmlSha256": "2fba65fce65674df7d967d808a8f4893e85b5f01f95cec7964fe07b0be2a3138"
+    },
+    {
+      "name": "Facility",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/tdm/standard/facility",
+      "mapXmlSha256": "6d55566821f888d06ce9947cd063b955af046ea64d042bfc0a1047bde768614c"
+    },
+    {
+      "name": "Fall Guys",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/fall_guys",
+      "mapXmlSha256": "ea4b7da0a83b0dcc9502bdfa0ab1b2c35cf0ac35df968d6cd9c58fd229e94841"
+    },
+    {
+      "name": "Fields of Glory",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/tdm/standard/fields_of_glory",
+      "mapXmlSha256": "72060cc47520aa49a8b7312c4b8338076653505b3c951ea606f8713f43963651"
+    },
+    {
+      "name": "Find the Button!",
+      "capacity": 60,
+      "directory": "maps/CommunityMaps/arcade/standard/find_the_button",
+      "mapXmlSha256": "6f75beed558e2ad45fc825ece8ae4e43d52352aadfab013ac11e6de9bac93340"
+    },
+    {
+      "name": "Fireballs Bowl",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/touchdown/fireballs_bowl",
+      "mapXmlSha256": "4513319b9529a973938017b65ac5a1a3db71537f13a56822848adf02e62e9368"
+    },
+    {
+      "name": "Forest Shadows",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/kotf/forest_shadows",
+      "mapXmlSha256": "522fb21a6d919c060f013a2921dce72fc176ddd76d6c5e6c885bff51440740f1"
+    },
+    {
+      "name": "Foxtrot: TDM",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/tdm/standard/foxtrot_tdm",
+      "mapXmlSha256": "ebfaa1912937b016600ba34183395ac2a5f3e11a03dadfcc5998a22f2a427691"
+    },
+    {
+      "name": "Friday Night Lights",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/touchdown/friday_night_lights",
+      "mapXmlSha256": "f9c96e5a02501a1e73fed3406a9475d29573aef7b9be1abb77a8d940c4bdfd2b"
+    },
+    {
+      "name": "Funerea",
+      "capacity": 90,
+      "directory": "maps/PublicMaps/tdm/standard/funerea",
+      "mapXmlSha256": "ece0039b7ffa08a442253c8dfdfbc90853158924722ee1a88a5ab94eae33a49c"
+    },
+    {
+      "name": "Glacial Impact",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/glacial_impact",
+      "mapXmlSha256": "4bd983a34a5ef9fbb6bac6c4bbee79e96bdc223ff060d1efeb49bdeb7f829a59"
+    },
+    {
+      "name": "Glass Bridge",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/runner/glass_bridge",
+      "mapXmlSha256": "c036b0711903ccd16f05639354eac92e0cfa54b7d9f32a3e23a3a2c8328dfaba"
+    },
+    {
+      "name": "Gleon",
+      "capacity": 70,
+      "directory": "maps/PublicMaps/tdm/standard/gleon",
+      "mapXmlSha256": "cd8ffa86cb76d3d63ad803266d8957411805c04a1cfb43e84a703537431b4cac"
+    },
+    {
+      "name": "Gleon KotF",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/kotf/gleon_kotf",
+      "mapXmlSha256": "55a7d8ddbeec9d744574dbdda224f25a30336f9d37177d2410430666d822a6ef"
+    },
+    {
+      "name": "Green Hill Zone",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/green_hill_zone",
+      "mapXmlSha256": "47964db201cfe59f0d9decd2cdd929d1ae93283bbc46d56a0158e87cc6092977"
+    },
+    {
+      "name": "Hallowed Harb",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/halloween/hallowed_harb",
+      "mapXmlSha256": "43a3663d0b1fd869bdd81d014f1166b2648e06fa28c21e7a259ea57f981c204d"
+    },
+    {
+      "name": "Hanger",
+      "capacity": 30,
+      "directory": "maps/PublicMaps/tdm/standard/hanger",
+      "mapXmlSha256": "e11e70e15548462f9ea6bfd8c5a55894411face44b26d8459384b9017c6e58c9"
+    },
+    {
+      "name": "Harb KotF",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/kotf/harb_kotf",
+      "mapXmlSha256": "79052b59e6ad6a237275067f29cba786d5bc5e5d837be6018890af137ea3e756"
+    },
+    {
+      "name": "Harvest",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/harvest",
+      "mapXmlSha256": "adb81f26738fcef3fa0c388fbdc79a996634dddc8a42228bb6b5d3d6cf587fdc"
+    },
+    {
+      "name": "Haunted Corridors",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/halloween/haunted_corridors",
+      "mapXmlSha256": "584245bb3cb24002df11a973e79c7741a0185048027ae401cf63accc0fc12425"
+    },
+    {
+      "name": "Hide n' Seek",
+      "capacity": 53,
+      "directory": "maps/CommunityMaps/arcade/standard/hide_n_seek",
+      "mapXmlSha256": "39885be52a6c94116b21569215a1fba7fca70afb83a928ae6235fa75e8deaabb"
+    },
+    {
+      "name": "Hide n' Seek: US STATES",
+      "capacity": 62,
+      "directory": "maps/CommunityMaps/arcade/standard/hide_n_seek_us_states",
+      "mapXmlSha256": "961e4bfb29277ea9d1d7e2c6b836c3c18de4ba3a32a7fde45a27d405e7969087"
+    },
+    {
+      "name": "Hillside",
+      "capacity": 90,
+      "directory": "maps/PublicMaps/ffa/hillside",
+      "mapXmlSha256": "fdae13c599cf719778239ac1db683aeb8fea403d757d7ed48d325a78d66376c6"
+    },
+    {
+      "name": "Icebliss",
+      "capacity": 100,
+      "directory": "maps/PublicMaps/tdm/standard/icebliss",
+      "mapXmlSha256": "0ddbeaefde19da8ae426da7b57b3fdc33396ca94a850c92ab59d5c5e7d7af2a3"
+    },
+    {
+      "name": "Icy Peaks TDM",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/tdm/standard/icy_peaks_tdm",
+      "mapXmlSha256": "d319a97a387bc9a524eb2d54de816d54802c3d07dce21e8a11386a33f40e6463"
+    },
+    {
+      "name": "Illegal Office",
+      "capacity": 50,
+      "directory": "maps/PublicMaps/tdm/standard/illegal_office",
+      "mapXmlSha256": "7a426e1697052e1af7a1bd7b0d22e218ae53abe4da9b3056b11d52470703a562"
+    },
+    {
+      "name": "Immitis",
+      "capacity": 30,
+      "directory": "maps/PublicMaps/ffa/immitis",
+      "mapXmlSha256": "38f0fbca9b51756bfa82bbef88c2f4ed75f129b945e023ee68fdc063da85832c"
+    },
+    {
+      "name": "Infection: Amusement Park",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_amusement_park",
+      "mapXmlSha256": "fc6aa9e29f39cb55f136c855f3676edae53210c469fceff4fce990289ce7fbec"
+    },
+    {
+      "name": "Infection: Boulevard",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_boulevard",
+      "mapXmlSha256": "d0ea27aa31c3b1d417b5a42e64fe6ff5a9da7763dd896592e10f4d3bcd22de73"
+    },
+    {
+      "name": "Infection: Cataclysm",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_cataclysm",
+      "mapXmlSha256": "7a638848ee618cf20983bcc1a379a05078cbea10b6d2ac3dc3af3b27c984d4fc"
+    },
+    {
+      "name": "Infection: Cinema Jungle Scenario",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_cinema_jungle_scenario",
+      "mapXmlSha256": "6a08affccb6b282d2df45ff9e84738a2c82817da73ef1994ae583f758a27d7d4"
+    },
+    {
+      "name": "Infection: Cityscape",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_cityscape",
+      "mapXmlSha256": "5f69a9e85dd142d4fd10cbc97ff6eca0ae1a5ce47f7352b1a3e39d58ed0c3efd"
+    },
+    {
+      "name": "Infection: Clue",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_clue",
+      "mapXmlSha256": "42620dc6f3a5e6df127fb5a63b698042046d55fb9d1f08c4739f73ce12a0846d"
+    },
+    {
+      "name": "Infection: Kraken",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_kraken",
+      "mapXmlSha256": "f8661d35256d34945da020b81f71573ed486a33dfd271789ab90a1d05f66b9e9"
+    },
+    {
+      "name": "Infection: Riot in Prison",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_riot_in_prison",
+      "mapXmlSha256": "dee86e219de4b15b7793f37926acb5423eb635964ecfe24567ed942b24eee5fa"
+    },
+    {
+      "name": "Infection: Shaheedieni Edition",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_shaheedieni_edition",
+      "mapXmlSha256": "22683f90eb6f29a38011afafd3cd8be807f66de96e0beab683d591cd61f315e7"
+    },
+    {
+      "name": "Infection: Skull Island",
+      "capacity": 45,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_skull_island",
+      "mapXmlSha256": "9e9650a510b3a351244a8480bdc86cb8628e0081f57e6bc20a93188044c6326a"
+    },
+    {
+      "name": "Infection: Store",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/infection_store",
+      "mapXmlSha256": "fcd124f0fa8bbf053981b57cba330e646b3097a5d4716112e4144a588c30c0af"
+    },
+    {
+      "name": "Infinity Race",
+      "capacity": 80,
+      "directory": "maps/CommunityMaps/arcade/runner/infinity_race",
+      "mapXmlSha256": "a2f01482a2775bb197c8b453741bf0fd28f1e686ccaa98d7f2a767219d207c55"
+    },
+    {
+      "name": "Intruders",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/intruders",
+      "mapXmlSha256": "53bf69208e3f47fbfdf0243805a1a144aa3331aa5ccfe9c5d183914f22429c57"
+    },
+    {
+      "name": "Juggernaut's Hall: Sacrifice",
+      "capacity": 66,
+      "directory": "maps/CommunityMaps/arcade/standard/juggernauts_hall_sacrifice",
+      "mapXmlSha256": "a5f755344f22fc524007fe26ac0ad0395fe190f63ab2e38db62d17b6d9abef81"
+    },
+    {
+      "name": "Keeper",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/touchdown/keeper",
+      "mapXmlSha256": "3a0f0b432256be72d92bbe4fcb4377e6b704492545f132940bcdaa369adc2c80"
+    },
+    {
+      "name": "Killavator",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/killavator",
+      "mapXmlSha256": "6d66c52813f470707356f36aaf0e350abaab7654fd8d5ceaf5bdbae7c0537747"
+    },
+    {
+      "name": "King's Conquest: Dry Outpost",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_dry_outpost",
+      "mapXmlSha256": "a70b913dbbda3f973fa3f2c52fc9058a655b96bf3999b66b28ff78e6ad9bc204"
+    },
+    {
+      "name": "King's Conquest: Incendiary",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_incendiary",
+      "mapXmlSha256": "bad7d78e23748ace6b062098b5b4fe46d9a9709e943c9874e1b3fa7e4078eedc"
+    },
+    {
+      "name": "King's Conquest: Lorikeet Lagoon",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_lorikeet_lagoon",
+      "mapXmlSha256": "ffb95b1672f69a853c1cd401edc583a48362838e9cd18ddcec44e911cb3e4d51"
+    },
+    {
+      "name": "King's Conquest: Porky Plains",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_porky_plains",
+      "mapXmlSha256": "e69cb0b4bc4013a411421f880d46479c16be16753702e074d6fa9efee084a202"
+    },
+    {
+      "name": "King's Conquest: Rage Quit",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_rage_quit",
+      "mapXmlSha256": "ce7c9b4c2285a176d16385d68e8ff405801614c2194da76f790866af99ebf4be"
+    },
+    {
+      "name": "King's Conquest: Rallypoint Beta",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/kings_conquest/kings_conquest_rallypoint_beta",
+      "mapXmlSha256": "a970d3c3946593a67c33b060b8177c699791154597ef26e92af1b7a0f4a58cfc"
+    },
+    {
+      "name": "Knockout Stadium",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/knockout_stadium",
+      "mapXmlSha256": "2a2b532feae20bf8fe857792389be57e5a0880b77f16fce43990fbb66bf88fb5"
+    },
+    {
+      "name": "Knockout Stick Fight: Pond Edition",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/knockout_stick_fight_pond_edition",
+      "mapXmlSha256": "006263c4cddf815b947cd0007fa015c64ee5b1fecab548b2d21b04c3bb5cdec0"
+    },
+    {
+      "name": "Kryta",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/ffa/kryta",
+      "mapXmlSha256": "4c9198c8134eb0f1979b3852e060be4dd16f32c2b628ecfd9b7481ad319db734"
+    },
+    {
+      "name": "Kryta: One Shot",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/ffa/kryta_one_shot",
+      "mapXmlSha256": "185a19f46cb8050e48c401a5dc578ff32d36a163dbff90fa7fb22d558bfaf0a8"
+    },
+    {
+      "name": "Kryta: Rage",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/ffa/kryta_rage",
+      "mapXmlSha256": "4ead0f92bc6972d4ba781ed727317f446c7741c09ace6c53b223078655700dae"
+    },
+    {
+      "name": "Kuusepuu CTC",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/standard/kuusepuu_ctc",
+      "mapXmlSha256": "6b98b0dff47220e98334c1dc10a5965dbe1ccba0c998a9338489d3032d9b7b52"
+    },
+    {
+      "name": "L'Automne",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/ffa/l_automne",
+      "mapXmlSha256": "f2990afa85bcef295a3271fee09bcb7a303d2e309e7957da11e95742c981682e"
+    },
+    {
+      "name": "Lights Out",
+      "capacity": 70,
+      "directory": "maps/PublicMaps/tdm/standard/lights_out",
+      "mapXmlSha256": "3504dd1ad4270c8f013caeaa75b45e23e30822b0062b4892244e22aab77af8d1"
+    },
+    {
+      "name": "Limbo II",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/limbo_ii",
+      "mapXmlSha256": "7654d2d6c2a9aa5bff7ead37da5be6559f178fa0e39a2e81e5c59291d99b9484"
+    },
+    {
+      "name": "Little China",
+      "capacity": 36,
+      "directory": "maps/PublicMaps/kotf/little_china",
+      "mapXmlSha256": "3b763d5d1cf64aed042bd1cd08ee8f69368a9f2bd4dddf359383a7eeaf22202f"
+    },
+    {
+      "name": "MB: 2014 Lobby",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_2014_lobby",
+      "mapXmlSha256": "1b27bc6d7ac25662d436b4f4248f1de1597c8d156577fcd01deb63d1279900be"
+    },
+    {
+      "name": "MB: 44 Rooms",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_44_rooms",
+      "mapXmlSha256": "dcd37604bc334fa7325c539c330a71330d6e3379bdbb11a76ab258b9063f7c04"
+    },
+    {
+      "name": "MB: Airship Battles",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_airship_battles",
+      "mapXmlSha256": "84626f46340074703ff6a76e8cfcd10167e28e1e9ef75a2f9fca6a14b029fb4f"
+    },
+    {
+      "name": "MB: Anarchy",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_anarchy",
+      "mapXmlSha256": "33e8af0478a6354fd34d5913b5834d54da72588913ef929b6e556c39530171fb"
+    },
+    {
+      "name": "MB: Avalon Funland",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_avalon_funland",
+      "mapXmlSha256": "f2191200f0f358a609a494f5ccc20595792f3f4b9526b406c0ba69ffb385c466"
+    },
+    {
+      "name": "MB: Battle of Tenjin",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_battle_of_tenjin",
+      "mapXmlSha256": "be728f53c80e754b1f9b0fbb403f1a2e477254d1c49619ca704fba5af9528e07"
+    },
+    {
+      "name": "MB: BlockBlock",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_blockblock",
+      "mapXmlSha256": "e6a84970534cf78e4c5b4190c1a365ad96262633c961999c4fddb286387a196a"
+    },
+    {
+      "name": "MB: Boombox",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_boombox",
+      "mapXmlSha256": "565ebb45fa9df178da56aa40b7d3d3a7139d408a16b1223ddc53fdb90372a079"
+    },
+    {
+      "name": "MB: CannonQuad",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_cannonquad",
+      "mapXmlSha256": "d3442220f912cb4581446ebc08fbadd3c7176e648f4e27dc0ef0b98f32c026a6"
+    },
+    {
+      "name": "MB: Catnap",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_catnap",
+      "mapXmlSha256": "7c30b35b4b65cfb3ad789812ca46288cab7640abc391edaa0de94961594af8e8"
+    },
+    {
+      "name": "MB: DATAcenter",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_datacenter",
+      "mapXmlSha256": "e9b1e8f59bc8cc80135ef49ffb315a9e80749ce56c97e935af7904e43a62808f"
+    },
+    {
+      "name": "MB: Desert Sanctuary",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_desert_sanctuary",
+      "mapXmlSha256": "788fcf6699cab1cd4ce4fbc7af7b263c930226d2a8e34bd75a86b98f43e935e7"
+    },
+    {
+      "name": "MB: Double Take",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_double_take",
+      "mapXmlSha256": "85bef8844436f224a5cc74f81d614dc5c085dfe1d9e003db4817e1adc07c42f1"
+    },
+    {
+      "name": "MB: Durrr Burger",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_durrr_burger",
+      "mapXmlSha256": "9b9de5275dbc340dc000c2ee90215a974bcc4ba1ca786e48580031948acc6b9f"
+    },
+    {
+      "name": "MB: Dynamo",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_dynamo",
+      "mapXmlSha256": "d7562d5e0c9b7c5e61c17d9d4f8add2779f22e5445e692ebb0e02595a4417a51"
+    },
+    {
+      "name": "MB: Fairy Tales",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_fairy_tales",
+      "mapXmlSha256": "6e279dcd788c665693e10330347f7b8e1a3f5cafef403f11d21c6e765b842638"
+    },
+    {
+      "name": "MB: Fenland",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_fenland",
+      "mapXmlSha256": "75891bee8503fbaf9da99519aff24b4c1ab87262388db29bff7d380043fd43ae"
+    },
+    {
+      "name": "MB: Fortress Battles",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_fortress_battles",
+      "mapXmlSha256": "8678c18c2bbe8c3961fd28e5316471722b74af4d01407c9774a04750dffe75a0"
+    },
+    {
+      "name": "MB: Fractal Descent",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_fractal_descent",
+      "mapXmlSha256": "a08e402f53e7108c9bb75a1a2d281e8399bf39c9bd0d5d9216c2184d353e3c48"
+    },
+    {
+      "name": "MB: Golden Drought",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_golden_drought",
+      "mapXmlSha256": "8c34c2b539f6edbcfd638ec687d9f4476fe0292f185e97386be0349a1ec90361"
+    },
+    {
+      "name": "MB: Hide n Seek Community",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_hide_n_seek_community",
+      "mapXmlSha256": "41ee88af664f1114045998c221ffea4a31cc48b8a00b19eeacf8f369c8ca0171"
+    },
+    {
+      "name": "MB: Hot Dam",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_hot_dam",
+      "mapXmlSha256": "2b4077867555fa87573e137a71742e5f59fb6edd66d55b03df8c32de19b8a41c"
+    },
+    {
+      "name": "MB: Kanto",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_kanto",
+      "mapXmlSha256": "7e2e90d5ea614b0f1bc24f23efd9c1f6cab190753253058fe6156017c1cac198"
+    },
+    {
+      "name": "MB: Limbo",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_limbo",
+      "mapXmlSha256": "904f1d065ebb0084bcb87b956736eef517420be4d945e2a6f1cb21bb7f51e03f"
+    },
+    {
+      "name": "MB: Luxor",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_luxor",
+      "mapXmlSha256": "a4aebe4a57fc542bf654faf458d0def2b49b46772acbead082347f5e75645f6d"
+    },
+    {
+      "name": "MB: MB^4",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_mb_4",
+      "mapXmlSha256": "7aba308edc81c10a48e530830a6fefa8ee2d31c8ce10080b967b7d514932e4c4"
+    },
+    {
+      "name": "MB: Micro Cacti Fright",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_micro_cacti_fright",
+      "mapXmlSha256": "421e58f6b8b8fd44ac1f9423bd2dbf930bbb70edf2102907a861cd352fa4907f"
+    },
+    {
+      "name": "MB: Miku and Friends",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_miku_and_friends",
+      "mapXmlSha256": "ed1efd970f00e18f008d0b3804c7d41538b402a18f4ba456e24c524cbe97a471"
+    },
+    {
+      "name": "MB: Penicillin",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_penicillin",
+      "mapXmlSha256": "e9c76985f7cc12f874f5c6d1a2ea472bd9ff3dd4dfe8c5b2705595161778da1c"
+    },
+    {
+      "name": "MB: Race For Victory 2",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_race_for_victory_2",
+      "mapXmlSha256": "9fa4508596929b583c7661a708c0d1fd8f26be426d46f941fc2af109bd4887d3"
+    },
+    {
+      "name": "MB: Race for Victory 4",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_race_for_victory_4",
+      "mapXmlSha256": "446fa01063d86ffe81767f9f711d0227ef2a88caa943991d9527407e212c50e5"
+    },
+    {
+      "name": "MB: Rallypoint Gamma",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_rallypoint_gamma",
+      "mapXmlSha256": "edcade73d77a1e8c8e06481409fc5157e265b3870ca08689ecd43f1e00bf671f"
+    },
+    {
+      "name": "MB: Renaissance",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_renaissance",
+      "mapXmlSha256": "7e3a844f4642510c39b9774941fdea002537a2f618c1ce25dff9859fc79208ae"
+    },
+    {
+      "name": "MB: Roulette",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_roulette",
+      "mapXmlSha256": "8cd121b96fbd2c64fe92c3447d642d2d9a583447921d395974a9649ea5197290"
+    },
+    {
+      "name": "MB: Sandstone Temples",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_sandstone_temples",
+      "mapXmlSha256": "8c830cb0d466da0f7301307bb907dc2a4acdf7a59b34a36d50104062735fd083"
+    },
+    {
+      "name": "MB: Snowy Wars",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_snowy_wars",
+      "mapXmlSha256": "4fd53d9d96ae0d4b6de83f1156d19a9fee6ec0d3fba8a69789270d26742606a7"
+    },
+    {
+      "name": "MB: Spaceship Battles",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_spaceship_battles",
+      "mapXmlSha256": "dcf45f2b22cb8b39b5b292ef23675b83d0d9ea8dd4d2f5d320358394790c5f4a"
+    },
+    {
+      "name": "MB: Sunrise",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_sunrise",
+      "mapXmlSha256": "004dfbf14ae5f90100bd0bf1486db8c0d10a631e0dd28e121887b3a5a7aa624a"
+    },
+    {
+      "name": "MB: TOM BRADY",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_tom_brady",
+      "mapXmlSha256": "6c6242f630937b13cbbc24c89aaeb952d08a66c5f4ad85803d867465fa67239a"
+    },
+    {
+      "name": "MB: TU9",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_tu9",
+      "mapXmlSha256": "96251e4a1237f6caf003cc46071e4437ded0e65a47d0e25f2df8a7a8e478c704"
+    },
+    {
+      "name": "MB: Tebulas",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_tebulas",
+      "mapXmlSha256": "4f1a480cf1376f9ebdf6414d62f5382d21215bca317390aa121f00d01517f300"
+    },
+    {
+      "name": "MB: Tilted Towers",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_tilted_towers",
+      "mapXmlSha256": "c1df523568b565d9e3facdc878d263426c0299552b181fd09d935f032dce55d8"
+    },
+    {
+      "name": "MB: UBoat",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_uboat",
+      "mapXmlSha256": "84ca4bcc5673050e34a6eec7d3d90fa122a028b4287c7dc127370a6912a53554"
+    },
+    {
+      "name": "MB: Vesuvius",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_vesuvius",
+      "mapXmlSha256": "0c63cc91fbe421476bc0a280f2283c9a77d063a1cbf4940294129d2ef9b601d1"
+    },
+    {
+      "name": "MB: Viridun",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_viridun",
+      "mapXmlSha256": "3db2f5c0def1094b557d1e8c424b84e226918d4e2f83255a372ad05669bd751e"
+    },
+    {
+      "name": "MB: Warlock",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_warlock",
+      "mapXmlSha256": "029e233670ebd361d0457b58fbb4ade40087e04e4b11cd86ae288385ee7c2dad"
+    },
+    {
+      "name": "MB: Wit's End",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_wits_end",
+      "mapXmlSha256": "ca3093c59bd135ed1a8b54373e3c7190f2221709ffdcf462cc8b6cfcc47437b8"
+    },
+    {
+      "name": "MB: Wootonia",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_wootonia",
+      "mapXmlSha256": "8b9252c6bea30edb217303254034480d3d56f3a2d5919903f8628722573db796"
+    },
+    {
+      "name": "MB: Xoi's Pinkity Drinkity Maid Cafe",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_xois_pinkity_drinkity_maid_cafe",
+      "mapXmlSha256": "3e81e0f913239233022061e4bd3f7c1d13cacfa111d2b7ec9441cb8ee18af9a9"
+    },
+    {
+      "name": "MB: Xyth",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/micro_battles/mb_xyth",
+      "mapXmlSha256": "2df758a79fe2e720d288c210ebacae7c8e02cdb35418fdf87919f5914ca3d13a"
+    },
+    {
+      "name": "Maple Syrup",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/kotf/maple_syrup",
+      "mapXmlSha256": "f4b0181ede9a031c649b30487aba3ab87d5a11c3b7bec0981ea60060eecfc9f4"
+    },
+    {
+      "name": "Mega Cacti Mania",
+      "capacity": 30,
+      "directory": "maps/CommunityMaps/arcade/standard/mega_cacti_mania",
+      "mapXmlSha256": "f2f7188782dc3c9eb91fa290bcdaf145bd06d500c491f4e33ef444273c20f955"
+    },
+    {
+      "name": "Mega Cacti Terror",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/mega_cacti_terror",
+      "mapXmlSha256": "62c3851c151155a7c39c807b39ac19367ad8410e18198b5bddbb6f5dc5498de3"
+    },
+    {
+      "name": "Mega Cacti Terror Teams",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/mega_cacti_terror_teams",
+      "mapXmlSha256": "aedd26551f31b51f76f52c0a2a3849d258d4bc27fbceb201ebec62eba675b3ab"
+    },
+    {
+      "name": "MobArena: Silent City",
+      "capacity": 150,
+      "directory": "maps/CommunityMaps/arcade/standard/mobarena_silent_city",
+      "mapXmlSha256": "3db1ca30cf12dccc66f4371812466a922d05adedc8bfbc76cbc6cce75ba2628b"
+    },
+    {
+      "name": "Modern Cityscape",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/modern_cityscape",
+      "mapXmlSha256": "5046d1882db6b4c9c85c3610159edcf117b924155412a99977de0f73462a55b7"
+    },
+    {
+      "name": "Mont Blanc Grand Prix",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/runner/mont_blanc_grand_prix",
+      "mapXmlSha256": "f45ccfbc1a8740a9ed1df9df18a38d56947796f0dfc564383b67ec5c91c5856e"
+    },
+    {
+      "name": "Mush",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/mush",
+      "mapXmlSha256": "8c84673c267d06a351cb3ba278e1a8fc0dc906c37111c209c763144cf98931e0"
+    },
+    {
+      "name": "Nether Run",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/arcade/runner/nether_run",
+      "mapXmlSha256": "e84b196ac1a8aea81f699c9561b7e2e4dc8dbb07e79b17a0f7e4244a649c7be3"
+    },
+    {
+      "name": "OutCast 2",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/kotf/outcast_2",
+      "mapXmlSha256": "00dac6b076129ae319c267f815a5bfc8723c617d591615504fcd5d96fb6fdfad"
+    },
+    {
+      "name": "Ozone",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/ozone",
+      "mapXmlSha256": "77d507e2df9c1691c087bf581f742d085e670a986baf87b705b73a014642d6b2"
+    },
+    {
+      "name": "Ozone EndeRAGE",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/ozone_enderage",
+      "mapXmlSha256": "a936306b1bf3a6acb7d284c1b443e04f9861ea78c3d87744e8b94c609dc84d3d"
+    },
+    {
+      "name": "Ozone FFA",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/ffa/ozone_ffa",
+      "mapXmlSha256": "702358886c2f76f8667c0920061926e98ad98ac821facb3df63cd68da1a883b4"
+    },
+    {
+      "name": "Paladin Saga",
+      "capacity": 25,
+      "directory": "maps/PublicMaps/ffa/paladin_saga",
+      "mapXmlSha256": "06f6ca4414540bd4e001056afa8ce91c65918987b1cc4ecfb9a020013edc66bc"
+    },
+    {
+      "name": "Pandemonium",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/pandemonium",
+      "mapXmlSha256": "c741ac89dc66b0a5c3c9baa418f32b01acf63057c3ad62febbdb08b8a479472a"
+    },
+    {
+      "name": "Paradiso",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/ffa/paradiso",
+      "mapXmlSha256": "3398e2b153a814d045d633f6f592d6dc584510278b37d88f4e43d106baa468bb"
+    },
+    {
+      "name": "Perfect Match",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/perfect_match",
+      "mapXmlSha256": "ce15a7c58ed69b534a2597e3d1f18730b40f236aa09e498c4282692d5f3d7a9e"
+    },
+    {
+      "name": "Pharaoh's Catacombs",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/tdm/standard/pharaohs_catacombs",
+      "mapXmlSha256": "6c8cf8eaa40ec1715789ec84dd0407cb5cf290e51bd079ba47d88bdf425cce50"
+    },
+    {
+      "name": "Pigskin Punchout",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/touchdown/pigskin_punchout",
+      "mapXmlSha256": "bd6c781f1d41ade5636952b6f3af1b70bf8f0fc8a5066c5ad4a8540a80ab57db"
+    },
+    {
+      "name": "Ping Ping Ping Ping Bomb",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/ping_ping_ping_ping_bomb",
+      "mapXmlSha256": "5010ec342ac8a9adf4c1eab869ff95cd3704df7aee7da517809ed39113fcd6f3"
+    },
+    {
+      "name": "Piston KotH",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/piston_koth",
+      "mapXmlSha256": "807626c18076f8e2891609c27483593b87d1403e71115949f383c0cb0920d129"
+    },
+    {
+      "name": "Place the Wool",
+      "capacity": 100,
+      "directory": "maps/CommunityMaps/arcade/standard/place_the_wool",
+      "mapXmlSha256": "fe4134eb3c601506f3f250da9f1269eaf65c08624a07866513c8aaefd6cbab84"
+    },
+    {
+      "name": "Player Blender",
+      "capacity": 48,
+      "directory": "maps/CommunityMaps/arcade/standard/player_blender",
+      "mapXmlSha256": "8b9859b9328d7a624adbd067e30df2ad21f25fd58e5fc5374918e17ab4bcf2b7"
+    },
+    {
+      "name": "Pokemon Arena",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/pokemon_arena",
+      "mapXmlSha256": "3fe2a3c6d667a9a528439aacaf801d4d2987ad6e9319b772263bc707d3a4d360"
+    },
+    {
+      "name": "Polar Spleef",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/standard/polar_spleef",
+      "mapXmlSha256": "a444bc134bba0edbe2c225dfa176829a49562c8fcd7856b34744b5cc8068f343"
+    },
+    {
+      "name": "Pompeii",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/ffa/pompeii",
+      "mapXmlSha256": "750b740c83d2ec0134e78701aaee83f820d7ceba634e093e7cede725c20cc2b8"
+    },
+    {
+      "name": "Possession Game",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/touchdown/possession_game",
+      "mapXmlSha256": "537438271c0192c49f15cbdb66e542de18b8fbafb069011894ceaad9911aae35"
+    },
+    {
+      "name": "Prospect Park",
+      "capacity": 32,
+      "directory": "maps/CommunityMaps/touchdown/prospect_park",
+      "mapXmlSha256": "2459b55d3a09c93269bbedff44669ffdfe015b5d58eebd695ca696186daceb03"
+    },
+    {
+      "name": "Quadrival",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/quadrival",
+      "mapXmlSha256": "b5865a7c6c19b6d4f4a003d82f5049567832046e28f0f77c995653255416369b"
+    },
+    {
+      "name": "Quatuor",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/tdm/standard/quatuor",
+      "mapXmlSha256": "c8911ba6129524f4500916e72f6744d5139767b7231543e0cf8e40d1d54a234c"
+    },
+    {
+      "name": "Raid FFA",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/ffa/raid_ffa",
+      "mapXmlSha256": "2debed9816536de3b354bad4db6171bb1ccc2121092b16c5c5b3e6c55387cd70"
+    },
+    {
+      "name": "Ranger Outpost",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/koth/ranger_outpost",
+      "mapXmlSha256": "45bf4a63ae4cf69dd8ae5c634dd71ded962d00d331bd37c6fa856632f17f3c27"
+    },
+    {
+      "name": "Road to the Moon",
+      "capacity": 25,
+      "directory": "maps/CommunityMaps/arcade/standard/road_to_the_moon",
+      "mapXmlSha256": "608f8a4d8204f8d278863a8ce1e6689e2fec5e46003c31ef9801434a4500859f"
+    },
+    {
+      "name": "Santa's Express Delivery",
+      "capacity": 36,
+      "directory": "maps/CommunityMaps/arcade/standard/santas_express_delivery",
+      "mapXmlSha256": "a4858215844013edccf81aef65cad3abb6d0ba7eaa24ac539f2b5a21568bc331"
+    },
+    {
+      "name": "Scorched",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/kotf/scorched",
+      "mapXmlSha256": "b36a481578abef4b58783c580691a2ea389760bc97467fcfbbe172adf7c504ce"
+    },
+    {
+      "name": "Scrap Mettle",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/scrap_mettle",
+      "mapXmlSha256": "6ebdda3d474550a59aab6bf62ebac5596cd6f6d82df75f8f591865aacda26d76"
+    },
+    {
+      "name": "Shock Wave",
+      "capacity": 50,
+      "directory": "maps/PublicMaps/tdm/standard/shock_wave",
+      "mapXmlSha256": "c87bb365c88bc725a13dfb8a2a315d1b01da2aa695c9afa1c1193a710594dc3a"
+    },
+    {
+      "name": "Sinuous",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/sinuous",
+      "mapXmlSha256": "42abbbb8f7cf5585b51b68259ea7246c8f4fa1077298a45d764a6d7b06724ef3"
+    },
+    {
+      "name": "Skill Issue",
+      "capacity": 60,
+      "directory": "maps/CommunityMaps/arcade/standard/skill_issue",
+      "mapXmlSha256": "79ef6db6723244c15bddc1c1a29714743ecca0ccac869d395314acf017c186bc"
+    },
+    {
+      "name": "Skynet",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/skynet",
+      "mapXmlSha256": "8e6c98aeb773f1633e117172f61c49b5fc3c90674996af8ad0c273a737ec783c"
+    },
+    {
+      "name": "Smoke KotH",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/koth/smoke_koth",
+      "mapXmlSha256": "c695f7bae36a93492bf3808d84919f2f7b3ef5a9381d801a87386cdaab26cfab"
+    },
+    {
+      "name": "Stampede",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/tdm/standard/stampede",
+      "mapXmlSha256": "ac4ec6cc6f31dae1d89421cb9a803f9cb64b8f858a32c385dd69ab1c6861b149"
+    },
+    {
+      "name": "Stop the Boats: United Kingdom Edition",
+      "capacity": 30,
+      "directory": "maps/CommunityMaps/arcade/standard/stop_the_boats_united_kingdom_edition",
+      "mapXmlSha256": "a14fd4c844d9aed2ad7ec050e4b781c07fc74d18ccec23e044926d5d8bbcf890"
+    },
+    {
+      "name": "Storm",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/storm",
+      "mapXmlSha256": "347240be0580c162835b0bac042dd9f44339341222925da79625d1c8699f03e7"
+    },
+    {
+      "name": "Strike",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/tdm/standard/strike",
+      "mapXmlSha256": "b4a26d30553570486b17797b5c825f0423a4a45754ec75eb44469a2308e1872c"
+    },
+    {
+      "name": "StrikeZone",
+      "capacity": 40,
+      "directory": "maps/CommunityMaps/arcade/infection/StrikeZone",
+      "mapXmlSha256": "e12595d0d0c3ceb986a5a704011f7a3aef8c476984dac0e0f0e59ee163bff9cb"
+    },
+    {
+      "name": "Sugar Rush",
+      "capacity": 70,
+      "directory": "maps/PublicMaps/tdm/standard/sugar_rush",
+      "mapXmlSha256": "11150d9a7858cec7eadf16b472bae749f0245165f8d86560fc3bf043cf379409"
+    },
+    {
+      "name": "Sunburn",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/koth/sunburn",
+      "mapXmlSha256": "10655b8c5b9cb56726f67e62267a82b1b55e440e60c470faab68b2e122036d92"
+    },
+    {
+      "name": "SuperPRISM",
+      "capacity": 36,
+      "directory": "maps/PublicMaps/tdm/standard/superprism",
+      "mapXmlSha256": "5c8dea92ab10cd13b69633b88cf2a45b2c4e051a9036e23c859b34d7c398d984"
+    },
+    {
+      "name": "TNT Rain",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_rain",
+      "mapXmlSha256": "473adbd0ea5ce3794fdae6e688dba006822c5c93f1efa369af020e366bfbf86f"
+    },
+    {
+      "name": "TNT Tag: Block Fortress",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_tag_block_fortress",
+      "mapXmlSha256": "604c7c3ae55b5334bd0cdc7404b281891e93806789b9f0a8d434d04d297a02e9"
+    },
+    {
+      "name": "TNT Tag: Incendiary",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_tag_incendiary",
+      "mapXmlSha256": "b8b89c610bbbc87bd0377308e80e08c6750b09825a17297f64b4206e7aa3f598"
+    },
+    {
+      "name": "TNT Tag: Monkey Mayhem",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_tag_monkey_mayhem",
+      "mapXmlSha256": "94c98425e085fcc923e2e722de0aceb483b147f4d7ef611893379ae319cce571"
+    },
+    {
+      "name": "TNT Tag: Warp Pocket",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_tag_warp_pocket",
+      "mapXmlSha256": "f6e2417fefd37293dabd96a9a3e60f423e4972caa390df1fb9929e6dc0b2a05b"
+    },
+    {
+      "name": "TNT Tag: Zoo",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/tnt_tag_zoo",
+      "mapXmlSha256": "b3cdbe3c331cecea676d37e06322bd5e94da768e9055e84e3376b32a5f5dcf09"
+    },
+    {
+      "name": "Tahiti",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/tahiti",
+      "mapXmlSha256": "a9c8350ba002035174016783888cba76bd6b4317a1c0d8aaf762a18aea5cf1a1"
+    },
+    {
+      "name": "Teamwork",
+      "capacity": 48,
+      "directory": "maps/CommunityMaps/arcade/runner/teamwork",
+      "mapXmlSha256": "98ee0255d19313584513d828f33feb96406226c24cdfe508730ae531eed863bc"
+    },
+    {
+      "name": "Tebulas",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/tdm/standard/tebulas",
+      "mapXmlSha256": "d113d23c42af8740be66eed7dbad62baa255ab1f559e23f7ebf1122c930d6384"
+    },
+    {
+      "name": "The Arena",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/the_arena",
+      "mapXmlSha256": "e5c503311021227055f95e753c634c4782f47760b85603a1d6fa52af5be83f75"
+    },
+    {
+      "name": "The Arena: Classic",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/the_arena_classic",
+      "mapXmlSha256": "91e0d3e4f4436482107a11fda7256e691f891004be2b8140b53c510ad5aa5b58"
+    },
+    {
+      "name": "The Beast Incarnate",
+      "capacity": 58,
+      "directory": "maps/CommunityMaps/arcade/standard/the_beast_incarnate",
+      "mapXmlSha256": "c77dc8551516f431283ed05813320392a5c76d0beca2a63f1aba1aecbe3e810b"
+    },
+    {
+      "name": "The City",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/ffa/the_city",
+      "mapXmlSha256": "fa81aa1383beff0906687fabe3e80d9722228d277280621f3855938510f49280"
+    },
+    {
+      "name": "The Complex TDM",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/the_complex_tdm",
+      "mapXmlSha256": "a1d679d451cc72478acfada1903b8784a2c4b4ed34244b536763c6c4116322e6"
+    },
+    {
+      "name": "The Dropper: Community Edition",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/the_dropper_community_edition",
+      "mapXmlSha256": "7869adb63564cf3afc9342a0a11ff18fa5a435babad110ef8fcf2c1e37575c1e"
+    },
+    {
+      "name": "The Funky Queen",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/the_funky_queen",
+      "mapXmlSha256": "fb9b2c7bef7e5d8ad64940f8bfad878ea15ebce5c3ee4bfa16b2beb3dc58e8b5"
+    },
+    {
+      "name": "The Grand Dueling Tournament II",
+      "capacity": 64,
+      "directory": "maps/CommunityMaps/arcade/standard/the_grand_dueling_tournament_ii",
+      "mapXmlSha256": "94db9eba1dd14c91ed986669d3ca5af1a383373b17834925b6a505ba4bdb8196"
+    },
+    {
+      "name": "The Hill",
+      "capacity": 56,
+      "directory": "maps/PublicMaps/koth/the_hill",
+      "mapXmlSha256": "ad6d403eed96fcd2ae6c984d1886ed64de71315d281663b3040934d4ed15d283"
+    },
+    {
+      "name": "The Hill: Classic",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/koth/the_hill_classic",
+      "mapXmlSha256": "81dd8e89da3687843897ba46fb7d58da43f9db494885db024a931ab4fc2cc2af"
+    },
+    {
+      "name": "The Hopper",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/the_hopper",
+      "mapXmlSha256": "d92528547590d072c25a92ab24e1850a03b0f68fd1ed3f8bf0a2cb462550b444"
+    },
+    {
+      "name": "The Old Texas",
+      "capacity": 28,
+      "directory": "maps/PublicMaps/koth/the_old_texas",
+      "mapXmlSha256": "5fe57663a0c58b4260772ca34ee16a50e638c1f06cc5193fc1e5880ee4bc4d98"
+    },
+    {
+      "name": "The Pipes",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/ffa/the_pipes",
+      "mapXmlSha256": "fdf6e8198723ab828a53fc5ceab077dc026ea8908a859e716c399e932594cb03"
+    },
+    {
+      "name": "The Souper Bowl",
+      "capacity": 52,
+      "directory": "maps/CommunityMaps/touchdown/the_souper_bowl",
+      "mapXmlSha256": "c7cba18979d5bc9775585b41f569978e21e61333441032eb4c5378d708ac75d3"
+    },
+    {
+      "name": "Tired",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/tdm/standard/tired",
+      "mapXmlSha256": "77f0b970d8413cf8aa8f61819297ade1b6c982884bdc1e9998732422e11c5a58"
+    },
+    {
+      "name": "Titan",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/koth/titan",
+      "mapXmlSha256": "9c372d3dff6daa728cde95a0d4b50902d7b81572b97ce3a203ebcc9deffe2628"
+    },
+    {
+      "name": "Turf Warz",
+      "capacity": 200,
+      "directory": "maps/CommunityMaps/arcade/standard/turf_warz",
+      "mapXmlSha256": "9551ebd89604f593b505a20377061f89f78f79800481437d57c09fea6f6f3d7b"
+    },
+    {
+      "name": "Twilight Zone",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/twilight_zone",
+      "mapXmlSha256": "051279a2d5ef45faf4b703ec5f7f9565d6883ec63a244ed7aad98fcdb7177569"
+    },
+    {
+      "name": "U-Bahn",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/u-bahn",
+      "mapXmlSha256": "e69d041a4ef2872d023c4eb4ab0d57340fc670311aaacf9e7f18262ac5c68134"
+    },
+    {
+      "name": "UBoat König",
+      "capacity": 40,
+      "directory": "maps/PublicMaps/koth/uboat_konig",
+      "mapXmlSha256": "65643920854a4666042bb440d54e7e2218e3c9f11d6ad8f7154badae32a27949"
+    },
+    {
+      "name": "Up Down Fly",
+      "capacity": 50,
+      "directory": "maps/CommunityMaps/arcade/standard/up_down_fly",
+      "mapXmlSha256": "d83587244bf4e7cc97d3ead90f4b5be964fbc4c8ed7f5349035d4024dbd47281"
+    },
+    {
+      "name": "Urban Jungle",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/urban_jungle",
+      "mapXmlSha256": "ce84f9f0e6f152168f34b5c2a2bcab83149543a479d766c30709073de194b6e2"
+    },
+    {
+      "name": "Venice",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/venice_tdm",
+      "mapXmlSha256": "abfb00307f7bee9c0b398d7b0081d237cef6fa1039993e89778c0a92977049eb"
+    },
+    {
+      "name": "Verlate",
+      "capacity": 36,
+      "directory": "maps/PublicMaps/koth/verlate",
+      "mapXmlSha256": "44c2bc42011a0d505ec3c96ee19a1da365934c0c272a198a154ec01411ecd9f2"
+    },
+    {
+      "name": "Viridun",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/viridun",
+      "mapXmlSha256": "a62cd743bb8d30996a05037aa2cfe90dd9d59a65095bfeeb97ca3c68a3b29482"
+    },
+    {
+      "name": "Warp Pocket",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/warp_pocket",
+      "mapXmlSha256": "2c67dc6b29d3210a2ca80bf3f5ccd4c2021c191a9256080f6185e58dbafbaf9f"
+    },
+    {
+      "name": "Watch Your Head",
+      "capacity": 48,
+      "directory": "maps/CommunityMaps/arcade/standard/watch_your_head",
+      "mapXmlSha256": "733c8bfe6a5cd7ed324762ce1fa878a939971a90477eefa239dbc3eaf2760d88"
+    },
+    {
+      "name": "Water Drop: Cacti Terror",
+      "capacity": 60,
+      "directory": "maps/CommunityMaps/arcade/standard/water_drop_cacti_terror",
+      "mapXmlSha256": "1afc72c081105b1cb617578e205cf1f596e24d369845e5af643824fc41b9c9d7"
+    },
+    {
+      "name": "Water Drop: Directrix",
+      "capacity": 60,
+      "directory": "maps/CommunityMaps/arcade/standard/water_drop_directrix",
+      "mapXmlSha256": "e8e6e0aaa91efbb4931470b54a8b8b8f21dd853d56e494954c1f1bfa41d1147b"
+    },
+    {
+      "name": "Water Drop: Disc Wars",
+      "capacity": 60,
+      "directory": "maps/CommunityMaps/arcade/standard/water_drop_disc_wars",
+      "mapXmlSha256": "daf9cc1755e74e0619fae9307d60eca85c2f8aba76d1ff48943ad121e28811ba"
+    },
+    {
+      "name": "Wedgesome",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/ffa/wedgesome",
+      "mapXmlSha256": "02075deb16d7df13e116b3779bbc7aafeed29f95c27172e1181c44d159072bb8"
+    },
+    {
+      "name": "Whiteout",
+      "capacity": 60,
+      "directory": "maps/PublicMaps/tdm/christmas/whiteout",
+      "mapXmlSha256": "f7b4408134e2d8e405003383896bd9471726805e3d0f93ccaa37cfb30de612a7"
+    },
+    {
+      "name": "Wildwood Crevice",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/wildwood_crevice",
+      "mapXmlSha256": "3547e5c649d4db5f1a56362126194c5482762c92a010978c7563a962c28c3c2c"
+    },
+    {
+      "name": "Wooly Woods",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/wooly_woods",
+      "mapXmlSha256": "22b6fbcafbf6a9006e6cead8e37b164de73d46220a38561ab95518b4b189f54f"
+    },
+    {
+      "name": "Workshop",
+      "capacity": 32,
+      "directory": "maps/PublicMaps/koth/workshop",
+      "mapXmlSha256": "8595cd23263ffc28c575d6bfcc652c6b3a6d9a8ae3af23c6e836d05f5b7d3a25"
+    },
+    {
+      "name": "Wrath Altar",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/tdm/standard/wrath_altar",
+      "mapXmlSha256": "4286a0a0748930e7f1fcea080765bb29a857c02996d32d9730e95c601d632b93"
+    },
+    {
+      "name": "Wuhu Island",
+      "capacity": 60,
+      "directory": "maps/PublicMaps/koth/wuhu_island",
+      "mapXmlSha256": "1004b78968e352b8862e50f4bd3d6df3fe5f1fd3d78a74c7b13d9aa9cc14324f"
+    },
+    {
+      "name": "Yggdrasil",
+      "capacity": 80,
+      "directory": "maps/PublicMaps/tdm/standard/yggdrasil",
+      "mapXmlSha256": "a2f9cec00b083a1a3673af6dd97862c19ad9333a9a1e7b04a6f7d7b2c4dd13a3"
+    },
+    {
+      "name": "Zao",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/tdm/standard/zao",
+      "mapXmlSha256": "19f4a20660445bb4797d9c4800713215eaf36285a9b1eaa7f1d94e3f408bb861"
+    },
+    {
+      "name": "cos(tnt)",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/cos_tnt",
+      "mapXmlSha256": "c7d391a6088af758bc7838d0ccaa6882c6f4cfd37a116caa32672e8bd85621e1"
+    },
+    {
+      "name": "cos^2(tnt)",
+      "capacity": 48,
+      "directory": "maps/PublicMaps/koth/cos_2_tnt",
+      "mapXmlSha256": "a29574ded864632e16d84be254fd15cc2a990795fd3948e51fcbe5ac1001f0fe"
+    },
+    {
+      "name": "csc(tnt)",
+      "capacity": 64,
+      "directory": "maps/PublicMaps/koth/csc_tnt",
+      "mapXmlSha256": "52cec7761b89961208d7a65b5f2ceab8a0c5849e55aa64692c478ff302faa07c"
+    }
+  ],
+  "includesSha256": {
+    "4-team-bedwars.xml": "f3da8c74f2d8776ca9c8167c605fae99319f6224b3cd3e1e5fa44aa93c3d27a7",
+    "5cp.xml": "c745d662cfc1bcf8d3df11382ab2954130eaeb849bde5d73bef789757170bc18",
+    "8-team-bedwars.xml": "aa2f126ba2c4f56d7788a7dc6237c95a0d154fb68198f99b3c0f9215c87cffef",
+    "arrow-cooldown.xml": "483397796f7d0a43a7a7f296b34b2f9c48e0d6c622827e360603fab996dd0c82",
+    "blasternauts.xml": "9c75ceae2e79341a3e9e2c91e958b1ba804d6540df5e44680df3314878aa313a",
+    "block-runner.xml": "f3be41132558859928a9ce3a6864405570a533db5a71d32db19e185863615c70",
+    "bridge-swap.xml": "bc70d39392f85110121729c5896faf97de4011875ec926ec359950ffd73498e1",
+    "bridge.xml": "98ad10c7f4ef7ad30c701d5af7627e7ea563eb0eb840eea70c431f9056ff19cd",
+    "conquest-comp.xml": "1feb231d9a2b45eb8f0a4edf9f9d9a8642a54fa4f66bcc4921611b7a2b2bdabb",
+    "conquest.xml": "693d506af39f42ae25fba13a665eefadbe241b224f0cca1ade2dec8aa785fa4c",
+    "countdown.xml": "88ef824808a74244032fe399209cd099e5a4efb9563ac301233daaae19241a25",
+    "counter-strat.xml": "334d0d2048ebc724c59258a921ebc38387e709b8739b1e2a969ba81c80b3ac40",
+    "efficiency-variables.xml": "6544e87bcf4f56e019074a7ff3ec93f0622c2d85799b54552020c7e07b4f2cad",
+    "ffb.xml": "fd57030dfd9fdb529e9627b43a5f206743ec83d0bf132ff153d4d6c506a1f2d1",
+    "flag-battles.xml": "c3fead21e7ac6c17561062489d0b99f9c113bdfb94579fa0249ff31b0f2bf1e1",
+    "freeze-tag.xml": "abe4f0d705206f38410a26c0d134de6ec18fba1fb47af9e39cefc81e13403616",
+    "gapple-kill-reward.xml": "d7083b163f12469b75f986996133e83983e503ef85ea3fa2242905c1536c8614",
+    "global.xml": "6e51508c9b4dc9c8505f0fcea5db748c2092d5ae3332e17b72d3226710ffb44d",
+    "gs.xml": "d326750831d85b63add5f4797cff5a856caf0080571867c0f2c3404983e422cc",
+    "infection.xml": "f63fe71a385864c86cbf0d46a38864dae1c8e17cbb53bce9ab7c2672fe44a4e2",
+    "iron-bulkcrafting.xml": "bfe5849963fdd51d0f271f03d46997cbb58e59b79714aab8886d3578dfdb222d",
+    "item-sumo.xml": "c0d59b3595212292022257858cded12fc9332dde5e5a7dc3bb00ba765f477ee2",
+    "kings-conquest.xml": "93e3af84702d12c9539aa73f79e20cc27afc0164a9ac4c5d1c712b05b046172b",
+    "kotf-comp.xml": "639f00669249a52e4d240939bbd72a86daab60e03ea91a9e5337d2337dea516c",
+    "kotf.xml": "276b2ed5f6e2fef2867c988508beb59e7f0f048d6d2c48a8f8f06121b38ee4b2",
+    "lava-buckets.xml": "fee39e0f54e4c334e3acb5be7122bad6ac7873f7c2c107d717efa0511a26918b",
+    "lifesteal.xml": "128ed4a3fbb09fe9cd4ee60579352b506c5a05d9cf8b50b4247188bc10091eb8",
+    "micro-battles.xml": "5e8bd8c0e95c80f7d794018f0f3108b3555985beb808f042e936c25c9b44a802",
+    "mmclasses.xml": "5df13c73437607b2e6b2681a6ddc9162fe48b3898719ddc2192c38becbd0af32",
+    "oitq.xml": "c9eb41a61e5333f1a25a551370850e03918e3805a439b9e350f5007ac6119f47",
+    "overcast-pvp.xml": "c323b7f3c3fe1e6372baa9d6ee92dfe51d8f404a0ed8f220aac3f0f4df71697a",
+    "preparation.xml": "e3ebe9cf9a331cc29f829b201793dd4a6b685043cd0c0e5836d4d57a5b70e0ac",
+    "race.xml": "f51b97b3ae86d55b86a60b348648320c9998c4435744cb0695a37d1fdae14531",
+    "remove-punch.xml": "fab8522e70e28cc58be87f50e101f44a6e4834bea1ffcbc6270ab7524cdd1aac",
+    "sound-keys.xml": "3edbb34ba4d6d4bb3b7c978521e76ac0fc772fac10467431cd78f2db5bdea7f1",
+    "tension.xml": "36bc2ae0b1a4412e773996766038e86c1c572fade6ab2d2769a2adc3b5984880",
+    "tnt-tag.xml": "29ae1a58496c5771b6618161e631f818047a2ef3c84804e0fe1c6e7dcc56f1dc",
+    "touchdown.xml": "f1c4fdcd26e942a3480b3d6c8e8e22a3710dbfc30c547ab3f33f5f98ce95ea30",
+    "towers-bridge.xml": "7c184c34e949a14d80029f182ebc8953f48fba76033f3affd5d2396ffffefdbd",
+    "towers.xml": "cf3058b09792f4ff8b4ddce00c7c9de6d0cf66b6a5370c829768db4b2aa152a3",
+    "velocity-no-fall-damage.xml": "255f1c9f134369cc4b146675a9bb5da75be90d721b3f7529ab5499d0f3373013",
+    "void-death.xml": "bdebc51f8510d3a5c8362f5ef2152a14b66f002a3247b5421f255a0fb7c02ad7",
+    "water-lanes.xml": "08e9a78d083ba69f7b893e6883935be25778af041dd2e025cd1d33762aae27e0"
+  }
+}
